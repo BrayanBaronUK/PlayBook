@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEF9ED"
+        tools:context=".ventana2">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="143dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="288dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/need_for" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="225dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="288dp"
+            android:layout_marginEnd="8dp"
+            android:gravity=""
+            android:text="La nueva IA mejorada de la poli se asegura de que los policías trabajan todos a una, operan en equipo y adaptan su comportamiento en función de tu velocidad. Acaba con ellos para sacarles ventaja y si te embisten, asegúrate de embestirles más fuerte."
+            android:textColor="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="221dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="468dp"
+            android:layout_marginEnd="8dp"
+            android:gravity=""
+            android:text="Prepárate para la vuelta de la UEFA Champions League con nuevo contenido increíble para FIFA 19. Tienes equipaciones y artículos de jugador especiales de la Champions League, así como un jugador cedido durante 10 partidos a elegir entre Neymar Jr."
+            android:textColor="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="152dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="468dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fifa" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:ems="10"
+            android:hint="Buscar"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#9D9F9D"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="8dp"
+            android:onClick="onClicksal2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.883"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="149dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_rounded"
+            android:onClick="onClickevej"
+            android:text="Crear evento"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.186"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="247dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="PlayBook"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.585"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="221dp" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="51dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/editText"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/buscar" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

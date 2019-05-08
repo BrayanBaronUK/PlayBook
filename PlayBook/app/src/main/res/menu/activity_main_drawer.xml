@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_libros"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Libros" />
+        <item
+            android:id="@+id/nav_juegos"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Juegos" />
+        <item
+            android:id="@+id/nav_fotos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Fotos" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="perfil" />
+
+        <item
+            android:id="@+id/nav_salir"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Salir" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+
+        </menu>
+    </item>
+
+</menu>

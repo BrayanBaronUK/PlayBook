@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF9ED"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="247dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="8dp"
+                android:text="Ultimo video juego"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="247dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="408dp"
+                android:layout_marginEnd="8dp"
+                android:text="Libro mas compartido"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="209dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="256dp"
+                android:layout_marginEnd="8dp"
+                android:gravity=""
+                android:text="Armas combinadas Alíate con tus amigos en una experiencia cooperativa y enfréntate a la IA enemiga en cuatro tipos de desafío."
+                android:textColor="@color/cardview_dark_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.892"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="221dp"
+                android:layout_height="116dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="472dp"
+                android:layout_marginEnd="8dp"
+                android:gravity=""
+                android:text="Entender qué es, cómo opera y qué podemos hacer para que funcione a nuestro favor es fundamental, y es lo que el lector conseguirá en estas páginas."
+                android:textColor="@color/cardview_dark_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="156dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_rounded"
+                android:onClick="onClickeve"
+                android:text="buscar eventos"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.033"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="156dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_rounded"
+                android:onClick="onClickper"
+                android:text="buscar personas"
+                android:textColor="@color/cardview_light_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.811"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="247dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="PlayBook"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.114"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logo"
+                android:onClick="onClickfinal"
+                tools:layout_editor_absoluteY="3dp" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="136dp"
+                android:layout_height="139dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="468dp"
+                android:layout_marginEnd="8dp"
+                android:onClick="onClickfot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.922"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/libroevento" />
+
+            <ImageView
+                android:id="@+id/imageView45"
+                android:layout_width="141dp"
+                android:layout_height="143dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="onClickjug"
+                app:srcCompat="@drawable/eventojuegos" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

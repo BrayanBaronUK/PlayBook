@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ventana6"
+    android:background="#EEF9ED">
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="247dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="PlayBook"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="14dp" />
+
+    <TableLayout
+        android:id="@+id/simpleTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView74"> <!-- stretch the second column of the layout-->
+
+        <!-- first row of the table layout-->
+
+        <TableRow
+
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9AC3CC"
+                android:padding="18dip"
+                android:text="NOMBRE"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView32"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:background="#9AC3CC"
+                android:padding="18dip"
+                android:text="ESTADO"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView33"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:background="#9AC3CC"
+                android:padding="18dip"
+                android:text="HORA"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView16"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Daniela"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D2F3D2"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Disponible"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView18"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:padding="18dip"
+                android:text="9:00am"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Camilo"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F7F6B7"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="EnIntercambio"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView15"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:padding="18dip"
+                android:text="11:00am"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView7"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Juan Daniel"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F0D7DE"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="NoDisponible"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView9"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:padding="18dip"
+                android:text="3:00am"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Brayan"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView2"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:background="#F0D7DE"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="NoDisponible"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView3"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:padding="18dip"
+                android:text="3:30pm"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView4"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Cesar"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D2F3D2"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Disponible"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView6"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:padding="18dip"
+                android:text="9:00am"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Juanfer"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F7F6B7"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="EnIntercambio"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView12"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:padding="18dip"
+                android:text="4:00pm"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView19"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Pamela"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D2F3D2"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Disponible"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView21"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:padding="18dip"
+                android:text="5:00pm"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView22"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Lucia"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D2F3D2"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Disponible"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView24"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:padding="18dip"
+                android:text="8:00am"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/firstRow8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:id="@+id/simpleTextView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="Jazmin"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView26"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:background="#F0D7DE"
+                android:onClick="onClickchat"
+                android:padding="18dip"
+                android:text="NoDisponible"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <TextView
+
+                android:id="@+id/simpleTextView27"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:background="#D4DED4"
+                android:padding="18dip"
+                android:text="3:30pm"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

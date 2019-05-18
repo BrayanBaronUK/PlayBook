@@ -11,7 +11,7 @@ public class ventana4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.juegosReferencia);
+        setContentView(R.layout.juegos_referencia);
     }
 
     public void onClick(View view) {

@@ -5,22 +5,22 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class ventana15 extends AppCompatActivity {
+public class recuperar_contrasena extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ventana15);
+        setContentView(R.layout.recuperar_contrasena);
     }
 
-    public void onClickto14 (View view) {
-        Intent miIntent = new Intent(ventana15.this, MainActivity.class);
+    public void onClick(View view) {
+        Intent miIntent = new Intent(recuperar_contrasena.this, ventana1.class);
         startActivity(miIntent);
     }
 
-    public void onClick (View view) {
-        Intent miIntent = new Intent(ventana15.this, ventana1.class);
+    public void onClickrec(View view) {
+        Intent miIntent = new Intent(recuperar_contrasena.this, ventana1.class);
         startActivity(miIntent);
     }
 

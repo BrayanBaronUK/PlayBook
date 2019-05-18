@@ -11,7 +11,7 @@ public class ventana6 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ventana6);
+        setContentView(R.layout.disponibilidad);
     }
 
     public void onClick(View view) {

@@ -20,7 +20,7 @@ public class ventana1 extends AppCompatActivity {
     }
 
     public void onClick1(View view) {
-        Intent miIntent = new Intent(ventana1.this, ventana10.class);
+        Intent miIntent = new Intent(ventana1.this, recuperar_contrasena.class);
         startActivity(miIntent);
     }
 

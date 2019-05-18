@@ -10,7 +10,7 @@ public class ventana1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.InicioSesion);
+        setContentView(R.layout.inicioSesion);
 
     }
 

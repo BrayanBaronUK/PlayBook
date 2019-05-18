@@ -15,7 +15,7 @@ public class ventana14 extends AppCompatActivity {
     }
 
     public void onClickjug(View view) {
-        Intent miIntent = new Intent(ventana14.this, ventana15.class);
+        Intent miIntent = new Intent(ventana14.this, inicio_principal_descripcion.class);
         startActivity(miIntent);
     }
 
@@ -36,7 +36,7 @@ public class ventana14 extends AppCompatActivity {
     }
 
     public void onClicksubf(View view) {
-        Intent miIntent = new Intent(ventana14.this, ventana15.class);
+        Intent miIntent = new Intent(ventana14.this, inicio_principal_descripcion.class);
         startActivity(miIntent);
     }
 }

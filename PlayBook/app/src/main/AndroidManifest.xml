@@ -27,7 +27,7 @@
         <activity android:name=".recuperar_contrasena" />
         <activity android:name=".ventana17" />
         <activity android:name=".ventana13" />
-        <activity android:name=".ventana15" />
+        <activity android:name=".inicio_principal_descripcion" />
         <activity android:name=".ventana16" />
         <activity android:name=".ventana14" />
         <activity android:name=".ventana8" />

@@ -16,7 +16,7 @@ public class SalirFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.inicioSesion, container, false);
+        return inflater.inflate(R.layout.iniciosesion, container, false);
     }
 
 

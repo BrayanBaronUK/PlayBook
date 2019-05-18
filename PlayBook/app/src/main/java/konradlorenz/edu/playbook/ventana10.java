@@ -11,7 +11,7 @@ public class ventana10 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ventana10);
+        setContentView(R.layout.RecuperarContrasela);
     }
 
     public void onClick(View view) {

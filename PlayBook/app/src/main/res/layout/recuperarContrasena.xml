@@ -9,6 +9,11 @@
     android:background="#EEF9ED"
     tools:context=".ventana10">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"></LinearLayout>
+
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"

@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF9ED"
-    tools:context=".ventana10">
+    tools:context=".recuperar_contrasena">
 
     <LinearLayout
         android:layout_width="match_parent"

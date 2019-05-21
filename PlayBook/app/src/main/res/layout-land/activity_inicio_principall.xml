@@ -21,11 +21,14 @@
 
         <LinearLayout
             android:id="@+id/linearLayout10"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="710dp"
+            android:layout_height="87dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/idrcyclerprincipal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -36,10 +39,11 @@
 
                 <Button
                     android:id="@+id/button21"
-                    android:layout_width="156dp"
-                    android:layout_height="36dp"
+                    android:layout_width="214dp"
+                    android:layout_height="39dp"
                     android:layout_marginStart="8dp"
 
+                    android:layout_marginTop="32dp"
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/button_rounded"
@@ -47,36 +51,38 @@
                     android:textColor="@color/cardview_light_background"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/button16"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/button16"
-                    android:layout_width="156dp"
-                    android:layout_height="36dp"
+                    android:layout_width="214dp"
+                    android:layout_height="39dp"
                     android:layout_marginStart="32dp"
-                    android:layout_marginTop="24dp"
 
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/button_rounded"
                     android:text="buscar eventos"
                     android:textColor="@color/cardview_light_background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView42"
                     app:layout_constraintStart_toEndOf="@+id/button21"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView42" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/imageView42"
                     android:layout_width="82dp"
                     android:layout_height="55dp"
 
-                    android:layout_marginStart="330dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
                     android:layout_marginEnd="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/button16"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/button16"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/logo" />
 
@@ -86,15 +92,14 @@
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/idrcyclerprincipal"
-            android:layout_width="398dp"
-            android:layout_height="0dp"
+            android:layout_width="702dp"
+            android:layout_height="288dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
     </android.support.constraint.ConstraintLayout>

@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(miIntent);
     }
     public void onClicksal2 (View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana1.class);
+        Intent miIntent = new Intent(MainActivity.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 
@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClickfinal (View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana1.class);
+        Intent miIntent = new Intent(MainActivity.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 

@@ -20,7 +20,7 @@ public class inicio_principal_descripcion extends AppCompatActivity {
     }
 
     public void onClick (View view) {
-        Intent miIntent = new Intent(inicio_principal_descripcion.this, ventana1.class);
+        Intent miIntent = new Intent(inicio_principal_descripcion.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 

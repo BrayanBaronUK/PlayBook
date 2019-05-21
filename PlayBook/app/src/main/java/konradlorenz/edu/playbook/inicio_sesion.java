@@ -5,27 +5,27 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class ventana1 extends AppCompatActivity {
+public class inicio_sesion extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.iniciosesion);
+        setContentView(R.layout.inicio_sesion);
 
     }
 
     public void onClickinicio(View view) {
-        Intent miIntent = new Intent(ventana1.this, MainActivity.class);
+        Intent miIntent = new Intent(inicio_sesion.this, MainActivity.class);
         startActivity(miIntent);
     }
 
     public void onClick1(View view) {
-        Intent miIntent = new Intent(ventana1.this, recuperar_contrasena.class);
+        Intent miIntent = new Intent(inicio_sesion.this, recuperar_contrasena.class);
         startActivity(miIntent);
     }
 
     public void onClickregi(View view) {
-        Intent miIntent = new Intent(ventana1.this, ventana13.class);
+        Intent miIntent = new Intent(inicio_sesion.this, ventana13.class);
         startActivity(miIntent);
     }
 }

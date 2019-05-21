@@ -15,12 +15,12 @@ public class recuperar_contrasena extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        Intent miIntent = new Intent(recuperar_contrasena.this, ventana1.class);
+        Intent miIntent = new Intent(recuperar_contrasena.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 
     public void onClickrec(View view) {
-        Intent miIntent = new Intent(recuperar_contrasena.this, ventana1.class);
+        Intent miIntent = new Intent(recuperar_contrasena.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 

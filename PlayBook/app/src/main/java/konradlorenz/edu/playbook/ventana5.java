@@ -15,7 +15,7 @@ public class ventana5 extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        Intent miIntent = new Intent(ventana5.this, ventana1.class);
+        Intent miIntent = new Intent(ventana5.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 

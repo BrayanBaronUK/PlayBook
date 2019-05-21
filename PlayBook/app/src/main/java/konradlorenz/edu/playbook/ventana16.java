@@ -20,7 +20,7 @@ public class ventana16 extends AppCompatActivity {
     }
 
     public void onClick (View view) {
-        Intent miIntent = new Intent(ventana16.this, ventana1.class);
+        Intent miIntent = new Intent(ventana16.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 

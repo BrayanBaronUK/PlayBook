@@ -20,7 +20,7 @@ public class ventana11 extends AppCompatActivity {
     }
 
     public void onClickcon2 (View view) {
-        Intent miIntent = new Intent(ventana11.this, ventana8.class);
+        Intent miIntent = new Intent(ventana11.this, perfiluser.class);
         startActivity(miIntent);
     }
 

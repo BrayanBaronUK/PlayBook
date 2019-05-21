@@ -30,7 +30,7 @@
         <activity android:name=".ventana15" />
         <activity android:name=".ventana16" />
         <activity android:name=".ventana14" />
-        <activity android:name=".ventana8" />
+        <activity android:name=".perfiluser" />
         <activity android:name=".ventana11" />
         <activity android:name=".ventana12" />
         <activity android:name=".inicio" />

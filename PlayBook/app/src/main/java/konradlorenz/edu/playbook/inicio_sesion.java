@@ -15,7 +15,7 @@ public class inicio_sesion extends AppCompatActivity {
     }
 
     public void onClickinicio(View view) {
-        Intent miIntent = new Intent(inicio_sesion.this, MainActivity.class);
+        Intent miIntent = new Intent(inicio_sesion.this, inicio_principall.class);
         startActivity(miIntent);
     }
 

@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClickchat(View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana7.class);
+        Intent miIntent = new Intent(MainActivity.this, chat_messages.class);
         startActivity(miIntent);
     }
 

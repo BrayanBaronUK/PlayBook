@@ -23,7 +23,7 @@
         <activity android:name=".ventana4" />
         <activity android:name=".ventana5" />
         <activity android:name=".ventana6" />
-        <activity android:name=".ventana7" />
+        <activity android:name=".chat_messages" />
         <activity android:name=".recuperar_contrasena" />
         <activity android:name=".ventana17" />
         <activity android:name=".ventana13" />

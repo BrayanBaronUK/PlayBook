@@ -20,7 +20,7 @@ public class ventana6 extends AppCompatActivity {
     }
 
     public void onClickchat(View view) {
-        Intent miIntent = new Intent(ventana6.this, ventana7.class);
+        Intent miIntent = new Intent(ventana6.this, chat_messages.class);
         startActivity(miIntent);
     }
 

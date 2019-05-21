@@ -21,7 +21,7 @@
         <activity android:name=".inicio_sesion" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ventana2" />
-        <activity android:name=".ventana3" />
+        <activity android:name=".buscar_evento" />
         <activity android:name=".ventana4" />
         <activity android:name=".ventana5" />
         <activity android:name=".ventana6" />

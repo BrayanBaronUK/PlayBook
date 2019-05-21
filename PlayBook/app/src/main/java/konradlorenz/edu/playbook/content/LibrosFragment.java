@@ -16,7 +16,7 @@ public class LibrosFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.ventana3, container, false);
+        return inflater.inflate(R.layout.buscar_evento, container, false);
     }
 
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF9ED"
-    tools:context=".ventana4">
+    tools:context=".juegosreferencia">
 
     <android.support.constraint.ConstraintLayout
 

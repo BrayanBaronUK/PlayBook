@@ -5,38 +5,38 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class ventana14 extends AppCompatActivity {
+public class galeriafotos extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ventana14);
+        setContentView(R.layout.galeriafotos);
     }
 
     public void onClickjug(View view) {
-        Intent miIntent = new Intent(ventana14.this, inicio_principal_descripcionn.class);
+        Intent miIntent = new Intent(galeriafotos.this, inicio_principal_descripcionn.class);
         startActivity(miIntent);
     }
 
     public void onClickfot (View view) {
-        Intent miIntent = new Intent(ventana14.this, ventana16.class);
+        Intent miIntent = new Intent(galeriafotos.this, informacionfoto.class);
         startActivity(miIntent);
     }
 
     public void onClicksal (View view) {
-        Intent miIntent = new Intent(ventana14.this, ventana2.class);
+        Intent miIntent = new Intent(galeriafotos.this, ventana2.class);
         startActivity(miIntent);
     }
 
 
     public void onClicksalfo (View view) {
-        Intent miIntent = new Intent(ventana14.this, MainActivity.class);
+        Intent miIntent = new Intent(galeriafotos.this, MainActivity.class);
         startActivity(miIntent);
     }
 
     public void onClicksubf(View view) {
-        Intent miIntent = new Intent(ventana14.this, inicio_principal_descripcionn.class);
+        Intent miIntent = new Intent(galeriafotos.this, inicio_principal_descripcionn.class);
         startActivity(miIntent);
     }
 }

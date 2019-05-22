@@ -20,7 +20,7 @@ public class libros_principal_recycler extends AppCompatActivity {
     }
 
     public void onClick1 (View view) {
-        Intent miIntent = new Intent(libros_principal_recycler.this, ventana6.class);
+        Intent miIntent = new Intent(libros_principal_recycler.this, disponibilidad.class);
         startActivity(miIntent);
     }
 

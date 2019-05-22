@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClick(View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana5.class);
+        Intent miIntent = new Intent(MainActivity.this, libros_principal_recycler.class);
         startActivity(miIntent);
     }
 

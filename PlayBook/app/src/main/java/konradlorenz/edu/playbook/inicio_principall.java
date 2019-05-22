@@ -29,6 +29,10 @@ public class inicio_principall extends AppCompatActivity {
         Intent miIntent = new Intent(this, buscar_evento.class);
         startActivity(miIntent);
     }
+    public void onClickBuscarPersona (View view) {
+        Intent miIntent = new Intent(this, buscar_personas.class);
+        startActivity(miIntent);
+    }
 
     public List<inicio_principal_atributos> obtener(){
         List<inicio_principal_atributos> series = new ArrayList<>();

@@ -34,12 +34,12 @@ public class buscar_evento extends AppCompatActivity {
         return series;
     }
     public void onClick(View view) {
-        Intent miIntent = new Intent(buscar_evento.this, ventana5.class);
+        Intent miIntent = new Intent(buscar_evento.this, libros_principal_recycler.class);
         startActivity(miIntent);
     }
 
     public void onClick1 (View view) {
-        Intent miIntent = new Intent(buscar_evento.this, ventana5.class);
+        Intent miIntent = new Intent(buscar_evento.this, libros_principal_recycler.class);
         startActivity(miIntent);
     }
 

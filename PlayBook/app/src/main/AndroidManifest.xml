@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".inicio_principal_descripcionn"></activity>
+        <activity android:name=".buscar_personas"></activity>
+        <activity android:name=".inicio_principal_descripcionn" />
         <activity android:name=".inicio_principall" />
         <activity android:name=".inicio_splash">
             <intent-filter>
@@ -23,7 +24,7 @@
         <activity android:name=".ventana2" />
         <activity android:name=".buscar_evento" />
         <activity android:name=".ventana4" />
-        <activity android:name=".ventana5" />
+        <activity android:name=".libros_principal_recycler" />
         <activity android:name=".ventana6" />
         <activity android:name=".chat_messages" />
         <activity android:name=".recuperar_contrasena" />

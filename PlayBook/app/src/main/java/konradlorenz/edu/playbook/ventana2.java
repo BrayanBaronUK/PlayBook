@@ -14,7 +14,7 @@ public class ventana2 extends AppCompatActivity {
         setContentView(R.layout.ventana2);
     }
     public void onClickevej (View view) {
-        Intent miIntent = new Intent(ventana2.this, ventana4.class);
+        Intent miIntent = new Intent(ventana2.this, juegosreferencia.class);
         startActivity(miIntent);
     }
 

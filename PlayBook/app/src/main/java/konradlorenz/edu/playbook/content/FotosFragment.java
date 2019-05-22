@@ -16,6 +16,6 @@ public class FotosFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.ventana14, container, false);
+        return inflater.inflate(R.layout.galeriafotos, container, false);
     }
 }

@@ -26,7 +26,8 @@
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:background="#EEF9ED">
 
                     <TextView
                         android:id="@+id/nombre"

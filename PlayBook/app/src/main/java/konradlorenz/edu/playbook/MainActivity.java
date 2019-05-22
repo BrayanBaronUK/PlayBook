@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClick1 (View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana4.class);
+        Intent miIntent = new Intent(MainActivity.this, juegosreferencia.class);
         startActivity(miIntent);
     }
     public void onClicksal2 (View view) {
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClickfot (View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana16.class);
+        Intent miIntent = new Intent(MainActivity.this, informacionfoto.class);
         startActivity(miIntent);
     }
 
@@ -148,12 +148,12 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClickto14 (View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana14.class);
+        Intent miIntent = new Intent(MainActivity.this, galeriafotos.class);
         startActivity(miIntent);
     }
 
     public void onClickt14 (View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana14.class);
+        Intent miIntent = new Intent(MainActivity.this, galeriafotos.class);
         startActivity(miIntent);
     }
 
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClickper (View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana6.class);
+        Intent miIntent = new Intent(MainActivity.this, disponibilidad.class);
         startActivity(miIntent);
     }
 
@@ -192,12 +192,12 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClickevej (View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana4.class);
+        Intent miIntent = new Intent(MainActivity.this, juegosreferencia.class);
         startActivity(miIntent);
     }
 
     public void onClickregi(View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana13.class);
+        Intent miIntent = new Intent(MainActivity.this, registrar_usuario.class);
         startActivity(miIntent);
     }
 

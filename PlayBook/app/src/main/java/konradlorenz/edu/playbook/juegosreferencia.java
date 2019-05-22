@@ -5,23 +5,22 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class ventana16 extends AppCompatActivity {
+public class juegosreferencia extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ventana16);
+        setContentView(R.layout.juegos_referencia);
     }
 
-    public void onClickt14 (View view) {
-        Intent miIntent = new Intent(ventana16.this, MainActivity.class);
+    public void onClick(View view) {
+        Intent miIntent = new Intent(juegosreferencia.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 
-    public void onClick (View view) {
-        Intent miIntent = new Intent(ventana16.this, inicio_sesion.class);
+    public void onClick1 (View view) {
+        Intent miIntent = new Intent(juegosreferencia.this, ventana17.class);
         startActivity(miIntent);
     }
-
 }

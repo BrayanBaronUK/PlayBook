@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class ventana6 extends AppCompatActivity {
+public class disponibilidad extends AppCompatActivity {
 
 
     @Override
@@ -15,18 +15,18 @@ public class ventana6 extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        Intent miIntent = new Intent(ventana6.this, inicio_sesion.class);
+        Intent miIntent = new Intent(disponibilidad.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 
     public void onClickchat(View view) {
-        Intent miIntent = new Intent(ventana6.this, chat_messages.class);
+        Intent miIntent = new Intent(disponibilidad.this, chat_messages.class);
         startActivity(miIntent);
     }
 
 
     public void onClickmain (View view) {
-        Intent miIntent = new Intent(ventana6.this, MainActivity.class);
+        Intent miIntent = new Intent(disponibilidad.this, MainActivity.class);
         startActivity(miIntent);
     }
 

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".buscar_personas"></activity>
+        <activity
+            android:name=".crear_evento"
+            android:label="@string/title_activity_crear_evento"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".buscar_personas" />
         <activity android:name=".inicio_principal_descripcionn" />
         <activity android:name=".inicio_principall" />
         <activity android:name=".inicio_splash">

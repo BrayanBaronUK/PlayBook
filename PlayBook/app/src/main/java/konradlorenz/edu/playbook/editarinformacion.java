@@ -5,22 +5,22 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class ventana12 extends AppCompatActivity {
+public class editarinformacion extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ventana12);
+        setContentView(R.layout.editarinformacion);
     }
 
     public void onClick(View view) {
-        Intent miIntent = new Intent(ventana12.this, inicio_sesion.class);
+        Intent miIntent = new Intent(editarinformacion.this, inicio_sesion.class);
         startActivity(miIntent);
     }
 
     public void onClickinf2 (View view) {
-        Intent miIntent = new Intent(ventana12.this, perfiluser.class);
+        Intent miIntent = new Intent(editarinformacion.this, perfiluser.class);
         startActivity(miIntent);
     }
 

@@ -20,7 +20,7 @@ public class perfiluser extends AppCompatActivity {
     }
 
     public void onClickinf (View view) {
-        Intent miIntent = new Intent(perfiluser.this, ventana12.class);
+        Intent miIntent = new Intent(perfiluser.this, editarinformacion.class);
         startActivity(miIntent);
     }
 

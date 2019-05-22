@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".inicio_principall">
+    tools:context=".inicio_principall"
+    android:background="#EEF9ED">
 
     <FrameLayout
         android:id="@+id/flContent"
@@ -32,7 +33,8 @@
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#EEF9ED">
 
                 <Button
                     android:id="@+id/button21"
@@ -96,7 +98,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+            android:background="#EEF9ED"/>
     </android.support.constraint.ConstraintLayout>
 
 

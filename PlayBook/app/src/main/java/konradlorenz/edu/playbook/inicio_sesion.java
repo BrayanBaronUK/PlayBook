@@ -25,7 +25,7 @@ public class inicio_sesion extends AppCompatActivity {
     }
 
     public void onClickregi(View view) {
-        Intent miIntent = new Intent(inicio_sesion.this, ventana13.class);
+        Intent miIntent = new Intent(inicio_sesion.this, registrar_usuario.class);
         startActivity(miIntent);
     }
 }

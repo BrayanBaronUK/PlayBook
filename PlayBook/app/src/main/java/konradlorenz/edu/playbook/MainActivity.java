@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClickregi(View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana13.class);
+        Intent miIntent = new Intent(MainActivity.this, registrar_usuario.class);
         startActivity(miIntent);
     }
 

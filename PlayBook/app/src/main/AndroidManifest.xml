@@ -29,7 +29,7 @@
         <activity android:name=".chat_messages" />
         <activity android:name=".recuperar_contrasena" />
         <activity android:name=".ventana17" />
-        <activity android:name=".ventana13" />
+        <activity android:name=".registrar_usuario" />
         <activity android:name=".informacionfoto" />
         <activity android:name=".galeriafotos" />
         <activity android:name=".perfiluser" />

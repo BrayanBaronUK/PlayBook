@@ -5,17 +5,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class ventana13 extends AppCompatActivity {
+public class registrar_usuario extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ventana13);
+        setContentView(R.layout.registrar_usuario);
     }
 
     public void onClick(View view) {
-        Intent miIntent = new Intent(ventana13.this, MainActivity.class);
+        Intent miIntent = new Intent(registrar_usuario.this, MainActivity.class);
         startActivity(miIntent);
     }
 

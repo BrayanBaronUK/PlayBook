@@ -109,8 +109,8 @@
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/idrcyclerprincipal"
-                    android:layout_width="366dp"
-                    android:layout_height="510dp"
+                    android:layout_width="403dp"
+                    android:layout_height="501dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
@@ -118,7 +118,6 @@
                     android:background="#EEF9ED"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.216"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </android.support.constraint.ConstraintLayout>

@@ -1,5 +1,6 @@
 package konradlorenz.edu.playbook;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,4 +18,8 @@ public class crear_evento extends AppCompatActivity {
 
     }
 
+    public void onClickDevolverBuscarEvento(View view) {
+        Intent miIntent = new Intent(this, buscar_evento.class);
+        startActivity(miIntent);
+    }
 }

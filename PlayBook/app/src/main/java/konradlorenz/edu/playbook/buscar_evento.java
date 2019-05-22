@@ -33,6 +33,10 @@ public class buscar_evento extends AppCompatActivity {
         series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.call ));
         return series;
     }
+    public void onClickCrearEvento(View view) {
+        Intent miIntent = new Intent(this, crear_evento.class);
+        startActivity(miIntent);
+    }
     public void onClick(View view) {
         Intent miIntent = new Intent(buscar_evento.this, libros_principal_recycler.class);
         startActivity(miIntent);

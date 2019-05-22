@@ -36,6 +36,7 @@ public class buscar_evento extends AppCompatActivity {
     public void onClickCrearEvento(View view) {
         Intent miIntent = new Intent(this, crear_evento.class);
         startActivity(miIntent);
+        finish();
     }
     public void onClick(View view) {
         Intent miIntent = new Intent(buscar_evento.this, libros_principall.class);

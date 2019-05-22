@@ -1,12 +1,14 @@
 package konradlorenz.edu.playbook;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -27,14 +29,16 @@ public class libros_principal_recycler extends RecyclerView.Adapter<libros_princ
         public ViewHolder(View ItemView) {
             super(ItemView);
             foto = (ImageView) ItemView.findViewById(R.id.id_principal_img_libros);
+            elementView = ItemView;
         }
     }
 
     public List<libros_principal_atributos> catalogo;
 
 
-    public libros_principal_recycler(List<libros_principal_atributos> catalogo) {
+    public libros_principal_recycler(Context m,List<libros_principal_atributos> catalogo) {
         this.catalogo= catalogo;
+        this.m = m;
     }
 
     @Override
@@ -46,7 +50,21 @@ public class libros_principal_recycler extends RecyclerView.Adapter<libros_princ
 
     @Override
     public void onBindViewHolder(libros_principal_recycler.ViewHolder viewHoder, int i) {
+        final libros_principal_atributos serie = catalogo.get(i);
         viewHoder.foto.setImageResource(catalogo.get(i).getImg());
+        viewHoder.elementView.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+
+
+                Toast.makeText(m ,"Selecionado"+serie.getTitulo(), Toast.LENGTH_SHORT).show();
+                Intent miIntent = new Intent(view.getContext(), inicio_principal_descripcionn.class);
+                miIntent.putExtra("titulo", serie.getTitulo());
+                miIntent.putExtra("text", serie.getText());
+                miIntent.putExtra("foto", serie.getImg());
+                m.startActivity(miIntent);
+            }
+        });
     }
 
     @Override

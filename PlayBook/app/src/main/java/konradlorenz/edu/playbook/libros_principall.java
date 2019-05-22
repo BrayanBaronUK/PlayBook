@@ -25,11 +25,15 @@ public class libros_principall extends AppCompatActivity {
         recyclerView = (RecyclerView)findViewById(R.id.idrcyclerprincipallibro);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(m);
-        adaptador = new libros_principal_recycler(obtener());
+        adaptador = new libros_principal_recycler(this,obtener());
         recyclerView.setAdapter(adaptador);
     }
     public List<libros_principal_atributos> obtener(){
         List<libros_principal_atributos> series = new ArrayList<>();
+        series.add(new libros_principal_atributos("rtr","EL mejor juego",R.drawable.call));
+        series.add(new libros_principal_atributos("rtr","EL mejor juego",R.drawable.call));
+        series.add(new libros_principal_atributos("rtr","EL mejor juego",R.drawable.call));
+        series.add(new libros_principal_atributos("rtr","EL mejor juego",R.drawable.call ));
         series.add(new libros_principal_atributos("rtr","EL mejor juego",R.drawable.call));
         series.add(new libros_principal_atributos("rtr","EL mejor juego",R.drawable.call));
         series.add(new libros_principal_atributos("rtr","EL mejor juego",R.drawable.call));

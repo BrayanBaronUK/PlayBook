@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".libros_principal_descripcion"></activity>
         <activity
             android:name=".libros_principall"
             android:label="@string/title_activity_libros_principall"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".infouser_principal" />
         <activity android:name=".crear_evento" />
         <activity android:name=".buscar_personas" />

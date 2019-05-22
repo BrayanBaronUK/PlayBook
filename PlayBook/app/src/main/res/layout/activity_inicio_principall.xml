@@ -22,11 +22,14 @@
 
         <LinearLayout
             android:id="@+id/linearLayout10"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout19"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -41,10 +44,10 @@
                     android:layout_width="156dp"
                     android:layout_height="36dp"
                     android:layout_marginStart="8dp"
-                    android:onClick="onClickBuscarPersona"
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/button_rounded"
+                    android:onClick="onClickBuscarPersona"
                     android:text="buscar personas"
                     android:textColor="@color/cardview_light_background"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -57,10 +60,10 @@
                     android:layout_height="36dp"
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="24dp"
-                    android:onClick="onClickBuscarEvento"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/button_rounded"
+                    android:onClick="onClickBuscarEvento"
                     android:text="Buscar Eventos"
                     android:textColor="@color/cardview_light_background"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -86,20 +89,42 @@
 
         </LinearLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/idrcyclerprincipal"
-            android:layout_width="398dp"
-            android:layout_height="0dp"
+        <LinearLayout
+            android:id="@+id/linearLayout19"
+            android:layout_width="419dp"
+            android:layout_height="532dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
-            android:background="#EEF9ED"/>
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/idrcyclerprincipal"
+                    android:layout_width="366dp"
+                    android:layout_height="510dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#EEF9ED"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.216"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
     </android.support.constraint.ConstraintLayout>
 
 

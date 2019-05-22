@@ -14,46 +14,16 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                tools:layout_editor_absoluteX="-3dp"
-                tools:layout_editor_absoluteY="16dp">
-
-                <android.support.constraint.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#EEF9ED">
-
-                    <TextView
-                        android:id="@+id/nombre"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="262dp"
-                        android:layout_marginBottom="265dp"
-                        android:layout_weight="1"
-                        android:text="@ColombiaEventos"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </android.support.constraint.ConstraintLayout>
-
-            </LinearLayout>
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:id="@+id/linear"
-                android:layout_width="182dp"
-                android:layout_height="281dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/linearLayout8"
@@ -61,16 +31,18 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <android.support.constraint.ConstraintLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="196dp"
                     android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/inicio_img_principal_recycler"
-                        android:layout_width="170dp"
-                        android:layout_height="201dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="40dp"
+                        android:layout_width="181dp"
+                        android:layout_height="229dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -81,12 +53,10 @@
 
             <LinearLayout
                 android:id="@+id/linearLayout8"
-                android:layout_width="196dp"
-                android:layout_height="209dp"
+                android:layout_width="198dp"
+                android:layout_height="243dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -99,16 +69,30 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="66dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:text="@ColombiaEventos"
+                        app:layout_constraintBottom_toTopOf="@+id/inicio_titulo_principal_recycler"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
                         android:id="@+id/inicio_text_principal_recycler"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="67dp"
-                        android:layout_marginTop="32dp"
-                        android:layout_marginEnd="67dp"
-                        android:layout_marginBottom="131dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginBottom="64dp"
                         android:text="TextView"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.018"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/inicio_titulo_principal_recycler" />
 
@@ -116,17 +100,15 @@
                         android:id="@+id/inicio_titulo_principal_recycler"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="67dp"
-                        android:layout_marginTop="32dp"
-                        android:layout_marginEnd="67dp"
-                        android:layout_marginBottom="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginBottom="8dp"
                         android:layout_weight="1"
                         android:text="TextView"
                         app:layout_constraintBottom_toTopOf="@+id/inicio_text_principal_recycler"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.666"
+                        app:layout_constraintHorizontal_bias="0.018"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
                 </android.support.constraint.ConstraintLayout>
             </LinearLayout>

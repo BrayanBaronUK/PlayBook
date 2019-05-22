@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".libros_principal_recycler">
+    tools:context=".libros_principal_recycler"
+    android:background="#EEF9ED">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -29,7 +30,8 @@
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#EEF9ED">
 
                     <EditText
                         android:id="@+id/editText27"
@@ -84,7 +86,8 @@
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#EEF9ED">
 
                     <Button
                         android:id="@+id/button18"

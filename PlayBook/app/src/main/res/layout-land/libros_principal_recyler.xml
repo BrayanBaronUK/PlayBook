@@ -4,7 +4,8 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".libros_principal_recycler">
+    tools:context=".libros_principal_recycler"
+    android:background="#EEF9ED">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -29,7 +30,8 @@
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="278dp"
-                    android:layout_height="398dp">
+                    android:layout_height="398dp"
+                    android:background="#EEF9ED">
 
                     <EditText
                         android:id="@+id/editText27"
@@ -84,7 +86,8 @@
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#EEF9ED">
 
                     <Button
                         android:id="@+id/button18"
@@ -134,7 +137,8 @@
             app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/divider"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#EEF9ED"/>
 
         <View
             android:id="@+id/divider"

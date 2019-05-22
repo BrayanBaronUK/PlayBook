@@ -21,5 +21,6 @@ public class crear_evento extends AppCompatActivity {
     public void onClickDevolverBuscarEvento(View view) {
         Intent miIntent = new Intent(this, buscar_evento.class);
         startActivity(miIntent);
+        finish();
     }
 }

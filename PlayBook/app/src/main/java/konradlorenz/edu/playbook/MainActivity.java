@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClickinf (View view) {
-        Intent miIntent = new Intent(MainActivity.this, ventana12.class);
+        Intent miIntent = new Intent(MainActivity.this, editarinformacion.class);
         startActivity(miIntent);
     }
     public void onClicksal3 (View view) {

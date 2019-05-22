@@ -11,7 +11,7 @@ public class ventana11 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ventana11);
+        setContentView(R.layout.cambiocontrasena);
     }
 
     public void onClick(View view) {

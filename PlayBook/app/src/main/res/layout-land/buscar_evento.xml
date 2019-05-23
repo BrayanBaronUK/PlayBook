@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,10 +12,23 @@
     android:background="#EEF9ED"
     tools:context=".buscar_evento">
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/idrcyclerprincipal"
+            android:layout_width="398dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout12"
+            app:layout_constraintTop_toBottomOf="@+id/floatingMenu" />
+
         <LinearLayout
             android:id="@+id/linearLayout12"
-            android:layout_width="304dp"
-            android:layout_height="212dp"
+            android:layout_width="255dp"
+            android:layout_height="237dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -31,9 +45,8 @@
 
                 <EditText
                     android:id="@+id/editText3"
-                    android:layout_width="205dp"
-                    android:layout_height="42dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_width="208dp"
+                    android:layout_height="0dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -55,7 +68,6 @@
                     android:layout_height="48dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/button13"
                     app:layout_constraintEnd_toStartOf="@+id/editText3"
@@ -65,36 +77,86 @@
 
                 <Button
                     android:id="@+id/button13"
-                    android:layout_width="149dp"
-                    android:layout_height="32dp"
-                    android:layout_marginStart="64dp"
+                    android:layout_width="200dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="64dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/button_rounded"
-                    android:textColor="@color/cardview_light_background"
                     android:onClick="onClickCrearEvento"
                     android:text="Crear evento"
+                    android:textColor="@color/cardview_light_background"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.488"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editText3" />
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15" />
             </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/idrcyclerprincipal"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/floatingMenu"
+            android:layout_width="match_parent"
+            android:layout_height="405dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+            android:padding="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/linearLayout12"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:menu_backgroundColor="@android:color/transparent"
+            fab:menu_animationDelayPerItem="0"
+            fab:menu_colorNormal="#00C29F"
+            fab:menu_colorPressed="#00C29F"
+            fab:menu_colorRipple="#00C29F"
+            fab:menu_fab_label="Cancel"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_singleLine="true">
 
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onChat"
+                android:src="@drawable/fab_add"
+                fab:fab_label="@string/menuChat"
+                fab:fab_size="mini" />
+
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onPerfillocal"
+                android:src="@drawable/fab_add"
+                fab:fab_label="Perfil"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onConfiguracion"
+                android:src="@drawable/fab_add"
+                fab:fab_label="Config"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSalir"
+                android:src="@drawable/fab_add"
+                fab:fab_label="@string/menuSalir"
+                fab:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
     </android.support.constraint.ConstraintLayout>
 </RelativeLayout>

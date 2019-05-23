@@ -2,33 +2,32 @@ package konradlorenz.edu.playbook;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class perfiluser extends AppCompatActivity {
-
+public class perfil_usuario_local extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.perfiluser);
-    }
+        setContentView(R.layout.activity_perfil_usuario_local);
 
-    public void onClickcon (View view) {
-        Intent miIntent = new Intent(perfiluser.this, ventana11.class);
+    }
+    public void onClickLibrosLocal (View view) {
+        Intent miIntent = new Intent(this, libros_principall.class);
         startActivity(miIntent);
     }
-
-    public void onClickinf (View view) {
-        Intent miIntent = new Intent(perfiluser.this, editarinformacion.class);
+    public void onClickJuegosLocal (View view) {
+        Intent miIntent = new Intent(this, juegos_referencia_principal.class);
         startActivity(miIntent);
     }
-
-    public void onClicksal3 (View view) {
-        Intent miIntent = new Intent(perfiluser.this, inicio_principall.class);
+    public void onClickFotosLocal (View view) {
+        Intent miIntent = new Intent(this, galeria_fotos_principal.class);
         startActivity(miIntent);
     }
-
 
     public void onChat(View view) {
         Intent miIntent = new Intent(this, disponibilidad.class);

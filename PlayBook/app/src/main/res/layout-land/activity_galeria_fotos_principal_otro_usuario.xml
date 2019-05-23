@@ -65,6 +65,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="Fotos"
+                    android:textSize="50dp"
                     app:layout_constraintBottom_toTopOf="@+id/imageView2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

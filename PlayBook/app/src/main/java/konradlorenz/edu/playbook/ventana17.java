@@ -11,7 +11,7 @@ public class ventana17 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ventana17);
+        setContentView(R.layout.referencia_libros_juegos);
     }
 
     public void onClick(View view) {
@@ -20,9 +20,10 @@ public class ventana17 extends AppCompatActivity {
     }
 
 
-    public void onClickref1 (View view) {
-        Intent miIntent = new Intent(ventana17.this, MainActivity.class);
+    public void onClickVolverR (View view) {
+        Intent miIntent = new Intent(ventana17.this, libros_principall.class);
         startActivity(miIntent);
+        finish();
     }
 
 }

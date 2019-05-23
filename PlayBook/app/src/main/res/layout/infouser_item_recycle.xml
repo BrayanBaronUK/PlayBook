@@ -2,6 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -89,8 +90,8 @@
 
                 <TableLayout
                     android:id="@+id/simpleTableLayout"
-                    android:layout_width="90dp"
-                    android:layout_height="194dp"
+                    android:layout_width="197dp"
+                    android:layout_height="198dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="8dp"
@@ -111,10 +112,12 @@
 
                         <Button
                             android:id="@+id/id_libros_principal"
-                            android:layout_width="wrap_content"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:onClick="onClickLibros"
-                            android:text="Libros" />
+                            android:text="Libros"
+                            android:background="@drawable/button_rounded"
+                            android:textColor="@color/cardview_light_background"/>
                     </TableRow>
 
                     <TableRow
@@ -128,7 +131,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:onClick="onClickJuegos"
-                            android:text="Juegos" />
+                            android:text="Juegos"
+                            android:background="@drawable/button_rounded"
+                            android:textColor="@color/cardview_light_background"/>
                     </TableRow>
 
                     <TableRow
@@ -142,7 +147,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:onClick="onClickFotos"
-                            android:text="Fotos" />
+                            android:text="Fotos"
+                            android:background="@drawable/button_rounded"
+                            android:textColor="@color/cardview_light_background"/>
                     </TableRow>
 
                     <TableRow
@@ -155,10 +162,93 @@
                             android:id="@+id/id_chat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Chat" />
+                            android:text="Chat"
+                            android:onClick="onClickChat"
+                            android:background="@drawable/button_rounded"
+                            android:textColor="@color/cardview_light_background"/>
                     </TableRow>
 
                 </TableLayout>
+
+                <com.github.clans.fab.FloatingActionMenu
+                    android:id="@+id/floatingMenu"
+                    android:layout_width="121dp"
+                    android:layout_height="416dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/simpleTableLayout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:menu_backgroundColor="@android:color/transparent"
+                    fab:menu_animationDelayPerItem="0"
+                    fab:menu_colorNormal="#00C29F"
+                    fab:menu_colorPressed="#00C29F"
+                    fab:menu_colorRipple="#00C29F"
+                    fab:menu_fab_label="Cancel"
+                    fab:menu_labels_ellipsize="end"
+                    fab:menu_labels_singleLine="true">
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fabChat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onChat"
+                        android:src="@drawable/fab_add"
+                        fab:fab_label="Chat"
+                        fab:fab_size="mini" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fabFoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onFoto"
+                        android:src="@drawable/fab_add"
+                        fab:fab_label="Fotos"
+                        fab:fab_size="mini" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fabLibro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onLibro"
+                        android:src="@drawable/fab_add"
+                        fab:fab_label="Libros"
+                        fab:fab_size="mini" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fabPerfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onPerfil"
+                        android:src="@drawable/fab_add"
+                        fab:fab_label="Perfil"
+                        fab:fab_size="mini" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fabConfig"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onConfiguracion"
+                        android:src="@drawable/fab_add"
+                        fab:fab_label="Config"
+                        fab:fab_size="mini" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/fabSalir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onSalir"
+                        android:src="@drawable/fab_add"
+                        fab:fab_label="Salir"
+                        fab:fab_size="mini" />
+
+                </com.github.clans.fab.FloatingActionMenu>
             </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>

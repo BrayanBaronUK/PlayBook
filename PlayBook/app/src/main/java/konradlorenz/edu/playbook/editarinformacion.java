@@ -23,5 +23,13 @@ public class editarinformacion extends AppCompatActivity {
         Intent miIntent = new Intent(editarinformacion.this, perfiluser.class);
         startActivity(miIntent);
     }
+    public void onClickLibrosinf (View view) {
+        Intent miIntent = new Intent(this, libros_principall.class);
+        startActivity(miIntent);
+    }
+    public void onClickJuegosinf (View view) {
+        Intent miIntent = new Intent(this, juegos_referencia_principal.class);
+        startActivity(miIntent);
+    }
 
 }

@@ -9,6 +9,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import konradlorenz.edu.playbook.content.ChatFragment;
@@ -20,27 +21,30 @@ import konradlorenz.edu.playbook.content.SalirFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    private DrawerLayout drawer;
+    private ActionBarDrawerToggle toogle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-   //     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-    //    setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
+        this.drawer = (DrawerLayout) findViewById(R.id.drawer);
+        this.toogle = new ActionBarDrawerToggle(
+                this, drawer,  R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toogle);
+        toogle.syncState();
+
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -113,7 +117,7 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -205,7 +209,10 @@ public class MainActivity extends AppCompatActivity
         Intent miIntent = new Intent(MainActivity.this, inicio_principal_descripcionn.class);
         startActivity(miIntent);
     }
-
+    public void onChat(View view) {
+        Intent miIntent = new Intent(MainActivity.this, disponibilidad.class);
+        startActivity(miIntent);
+    }
 
 
 

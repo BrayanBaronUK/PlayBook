@@ -21,9 +21,11 @@ public class ventana17 extends AppCompatActivity {
 
 
     public void onClickVolverR (View view) {
-        Intent miIntent = new Intent(ventana17.this, libros_principall.class);
+        Intent miIntent = new Intent(ventana17.this, perfil_usuario_local.class);
         startActivity(miIntent);
         finish();
     }
+
+
 
 }

@@ -53,10 +53,12 @@
 
             <LinearLayout
                 android:id="@+id/linearLayout8"
-                android:layout_width="198dp"
-                android:layout_height="243dp"
+                android:layout_width="182dp"
+                android:layout_height="242dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -85,9 +87,11 @@
 
                     <TextView
                         android:id="@+id/inicio_text_principal_recycler"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
                         android:layout_marginBottom="64dp"
                         android:text="TextView"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,9 +102,11 @@
 
                     <TextView
                         android:id="@+id/inicio_titulo_principal_recycler"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
                         android:layout_weight="1"
                         android:text="TextView"

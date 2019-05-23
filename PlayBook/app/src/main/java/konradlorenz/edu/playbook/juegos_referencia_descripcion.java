@@ -16,7 +16,7 @@ public class juegos_referencia_descripcion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juegos_referencia_descripcion);
-        recyclerView = (RecyclerView)findViewById(R.id.id_principal_description_recycler);
+        recyclerView = findViewById(R.id.id_principal_description_recycler);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(m);
         adaptador = new jeugos_referencia_description_recycler(obtener());

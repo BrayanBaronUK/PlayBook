@@ -26,7 +26,7 @@ public class juegos_referencia_principal_recycler extends  RecyclerView.Adapter<
 
         public ViewHolder(View ItemView) {
             super(ItemView);
-            foto = (ImageView) ItemView.findViewById(R.id.id_juegos_referencia_img);
+            foto = ItemView.findViewById(R.id.id_juegos_referencia_img);
             elementView = ItemView;
         }
     }

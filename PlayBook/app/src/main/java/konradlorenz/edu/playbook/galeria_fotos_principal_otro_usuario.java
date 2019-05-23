@@ -22,7 +22,7 @@ public class galeria_fotos_principal_otro_usuario extends AppCompatActivity {
         setContentView(R.layout.activity_galeria_fotos_principal_otro_usuario);
 
 
-        recyclerView = (RecyclerView)findViewById(R.id.id_galeria_fotos_principal_recycler);
+        recyclerView = findViewById(R.id.id_galeria_fotos_principal_recycler);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(m);
         adaptador = new juegos_referencia_principal_recycler(this,obtener());

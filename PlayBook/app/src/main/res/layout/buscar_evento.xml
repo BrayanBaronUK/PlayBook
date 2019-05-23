@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -94,6 +95,86 @@
             </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/floatingMenu"
+            android:layout_width="139dp"
+            android:layout_height="211dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.968"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:menu_backgroundColor="@android:color/transparent"
+            fab:menu_animationDelayPerItem="0"
+            fab:menu_colorNormal="#00C29F"
+            fab:menu_colorPressed="#00C29F"
+            fab:menu_colorRipple="#00C29F"
+            fab:menu_fab_label="Cancel"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_singleLine="true">
 
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onChat"
+                android:src="@drawable/fab_add"
+                fab:fab_label="@string/menuChat"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onFoto"
+                android:src="@drawable/fab_add"
+                fab:fab_label="@string/menuFotos"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabLibro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onLibro"
+                android:src="@drawable/fab_add"
+                fab:fab_label="@string/menuLibros"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onPerfil"
+                android:src="@drawable/fab_add"
+                fab:fab_label="@string/menuPerfil"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onPerfil"
+                android:src="@drawable/fab_add"
+                fab:fab_label="@string/menuConfig"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSalir"
+                android:src="@drawable/fab_add"
+                fab:fab_label="@string/menuSalir"
+                fab:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
     </android.support.constraint.ConstraintLayout>
 </RelativeLayout>

@@ -25,7 +25,7 @@ public class perfiluser extends AppCompatActivity {
     }
 
     public void onClicksal3 (View view) {
-        Intent miIntent = new Intent(perfiluser.this, MainActivity.class);
+        Intent miIntent = new Intent(perfiluser.this, inicio_principall.class);
         startActivity(miIntent);
     }
 

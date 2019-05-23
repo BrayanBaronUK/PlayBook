@@ -15,7 +15,7 @@ public class registrar_usuario extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        Intent miIntent = new Intent(registrar_usuario.this, MainActivity.class);
+        Intent miIntent = new Intent(registrar_usuario.this, inicio_principall.class);
         startActivity(miIntent);
     }
 

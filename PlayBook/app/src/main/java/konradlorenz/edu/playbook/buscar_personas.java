@@ -1,9 +1,11 @@
 package konradlorenz.edu.playbook;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,4 +34,30 @@ public class buscar_personas extends AppCompatActivity {
         series.add(new buscar_personas_atributos("Nombre: Andrea Johanson", "Nacionalidad: Estadounidense","Edad: 19",R.drawable.actor4));
         return series;
     }
+    //CSANCHEZC
+    public void onChat(View view) {
+        Intent miIntent = new Intent(this, disponibilidad.class);
+        startActivity(miIntent);
+    }
+    public void onLibro(View view) {
+        Intent miIntent = new Intent(this, libros_principall.class);
+        startActivity(miIntent);
+    }
+    public void onJuego(View view) {
+        Intent miIntent = new Intent(this, disponibilidad.class);
+        startActivity(miIntent);
+    }
+    public void onFoto(View view) {
+        Intent miIntent = new Intent(this, galeria_fotos_principal.class);
+        startActivity(miIntent);
+    }
+    public void onPerfil(View view) {
+        Intent miIntent = new Intent(this, perfiluser.class);
+        startActivity(miIntent);
+    }
+    public void onSalir(View view) {
+        Intent miIntent = new Intent(this, inicio_sesion.class);
+        startActivity(miIntent);
+    }
+    //CSANCEHZC
 }

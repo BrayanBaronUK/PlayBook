@@ -194,6 +194,15 @@
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fabConfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onPerfil"
+                    android:src="@drawable/fab_add"
+                    fab:fab_label="Config"
+                    fab:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
                     android:id="@+id/fabSalir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

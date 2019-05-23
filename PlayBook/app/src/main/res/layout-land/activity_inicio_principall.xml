@@ -12,7 +12,8 @@
         android:id="@+id/flContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize">
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -104,18 +105,17 @@
 
             <com.github.clans.fab.FloatingActionMenu
                 android:id="@+id/floatingMenu"
-                android:layout_width="155dp"
-                android:layout_height="366dp"
+                android:layout_width="145dp"
+                android:layout_height="418dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
                 android:padding="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.968"
+                app:layout_constraintHorizontal_bias="0.972"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0"
@@ -165,17 +165,24 @@
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fabConfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onPerfil"
+                    android:src="@drawable/fab_add"
+                    fab:fab_label="Config"
+                    fab:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
                     android:id="@+id/fabSalir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onSalir"
-
                     fab:fab_label="Salir"
                     fab:fab_size="mini" />
 
             </com.github.clans.fab.FloatingActionMenu>
         </android.support.constraint.ConstraintLayout>
-
 
 
     </FrameLayout>

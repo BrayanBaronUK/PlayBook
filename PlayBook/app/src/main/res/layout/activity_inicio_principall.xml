@@ -153,8 +153,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0"
+                app:menu_backgroundColor="@android:color/transparent"
                 fab:menu_animationDelayPerItem="0"
-                fab:menu_backgroundColor="#ccffffff"
                 fab:menu_colorNormal="#00C29F"
                 fab:menu_colorPressed="#00C29F"
                 fab:menu_colorRipple="#00C29F"
@@ -163,26 +163,48 @@
                 fab:menu_labels_singleLine="true">
 
                 <com.github.clans.fab.FloatingActionButton
-                    android:id="@+id/fabEdit"
+                    android:id="@+id/fabChat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onChat"
+                    android:src="@drawable/fab_add"
                     fab:fab_label="Chat"
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
-                    android:id="@+id/fabAddProduct"
+                    android:id="@+id/fabFoto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onFoto"
+                    android:src="@drawable/fab_add"
                     fab:fab_label="Fotos"
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
-                    android:id="@+id/fabAddSubcategory"
+                    android:id="@+id/fabLibro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onLibro"
                     android:src="@drawable/fab_add"
-                    fab:fab_label="Subcategory"
+                    fab:fab_label="Libros"
+                    fab:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fabPerfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onPerfil"
+                    android:src="@drawable/fab_add"
+                    fab:fab_label="Perfil"
+                    fab:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fabSalir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSalir"
+                    android:src="@drawable/fab_add"
+                    fab:fab_label="Salir"
                     fab:fab_size="mini" />
 
             </com.github.clans.fab.FloatingActionMenu>

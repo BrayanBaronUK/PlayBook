@@ -42,8 +42,30 @@ public class inicio_principall extends AppCompatActivity {
         series.add(new inicio_principal_atributos("Steins Gate","Steins;Gate es una novela visual japonesa desarrollada por 5pb. y Nitroplus, y fue lanzada el 15 de octubre de 2009 para la Xbox 360.",R.drawable.juegoa19 ));
         return series;
     }
+    //CSANCHEZC
     public void onChat(View view) {
         Intent miIntent = new Intent(this, disponibilidad.class);
         startActivity(miIntent);
     }
+    public void onLibro(View view) {
+        Intent miIntent = new Intent(this, libros_principall.class);
+        startActivity(miIntent);
+    }
+    public void onJuego(View view) {
+        Intent miIntent = new Intent(this, disponibilidad.class);
+        startActivity(miIntent);
+    }
+    public void onFoto(View view) {
+        Intent miIntent = new Intent(this, galeria_fotos_principal.class);
+        startActivity(miIntent);
+    }
+    public void onPerfil(View view) {
+        Intent miIntent = new Intent(this, perfiluser.class);
+        startActivity(miIntent);
+    }
+    public void onSalir(View view) {
+        Intent miIntent = new Intent(this, inicio_sesion.class);
+        startActivity(miIntent);
+    }
+    //CSANCEHZC
 }

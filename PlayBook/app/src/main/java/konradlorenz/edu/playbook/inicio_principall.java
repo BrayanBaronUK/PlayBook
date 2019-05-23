@@ -60,11 +60,15 @@ public class inicio_principall extends AppCompatActivity {
         startActivity(miIntent);
     }
     public void onPerfil(View view) {
-        Intent miIntent = new Intent(this, perfiluser.class);
+        Intent miIntent = new Intent(this, perfil_usuario_local.class);
         startActivity(miIntent);
     }
     public void onSalir(View view) {
         Intent miIntent = new Intent(this, inicio_sesion.class);
+        startActivity(miIntent);
+    }
+    public void onConfiguracion(View view) {
+        Intent miIntent = new Intent(this, perfiluser.class);
         startActivity(miIntent);
     }
     //CSANCEHZC

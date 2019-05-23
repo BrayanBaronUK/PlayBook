@@ -42,6 +42,10 @@ public class infouser_principal extends AppCompatActivity {
         Intent miIntent = new Intent(this, galeria_fotos_principal_otro_usuario.class);
         startActivity(miIntent);
     }
+    public void onClickChat (View view) {
+        Intent miIntent = new Intent(this, chat_messages.class);
+        startActivity(miIntent);
+    }
 
 
     public List<infouser_principal_atributos> obtener(){

@@ -51,7 +51,7 @@ public class crear_evento extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_evento);
 
-        mSetImage = findViewById(R.id.set_picture);
+ /*       mSetImage = findViewById(R.id.set_picture);
         mOptionButton = findViewById(R.id.show_options_button);
         mRlView = findViewById(R.id.rl_view);
 
@@ -66,11 +66,11 @@ public class crear_evento extends AppCompatActivity {
             public void onClick(View v) {
                 showOptions();
             }
-        });
+        });*/
 
     }
 
-    private boolean mayRequestStoragePermission() {
+  /*  private boolean mayRequestStoragePermission() {
 
         if(Build.VERSION.SDK_INT < Build.VERSION_CODES.M)
             return true;
@@ -224,7 +224,7 @@ public class crear_evento extends AppCompatActivity {
         });
 
         builder.show();
-    }
+    }*/
 
 
 

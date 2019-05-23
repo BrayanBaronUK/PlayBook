@@ -20,4 +20,5 @@
     <string name="menuPerfil">Perfil</string>
     <string name="menuConfig">Config</string>
     <string name="menuLibros">Libros</string>
+    <string name="title_activity_perfil_usuario_local">perfil_usuario_local</string>
 </resources>

@@ -17,11 +17,7 @@
 
 
     </android.support.design.widget.AppBarLayout>
-    <FrameLayout
-        android:id="@+id/flContent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize">
+
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -197,7 +193,7 @@
                     android:id="@+id/fabConfig"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="onPerfil"
+                    android:onClick="onConfiguracion"
                     android:src="@drawable/fab_add"
                     fab:fab_label="Config"
                     fab:fab_size="mini" />
@@ -213,9 +209,5 @@
 
             </com.github.clans.fab.FloatingActionMenu>
         </android.support.constraint.ConstraintLayout>
-
-
-    </FrameLayout>
-
 
 </android.support.design.widget.CoordinatorLayout>

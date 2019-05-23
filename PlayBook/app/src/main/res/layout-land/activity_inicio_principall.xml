@@ -39,8 +39,8 @@
 
                     <Button
                         android:id="@+id/button21"
-                        android:layout_width="214dp"
-                        android:layout_height="39dp"
+                        android:layout_width="200dp"
+                        android:layout_height="47dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="32dp"
                         android:layout_marginEnd="8dp"
@@ -56,8 +56,8 @@
 
                     <Button
                         android:id="@+id/button16"
-                        android:layout_width="214dp"
-                        android:layout_height="39dp"
+                        android:layout_width="200dp"
+                        android:layout_height="47dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="32dp"
                         android:layout_marginEnd="8dp"
@@ -168,7 +168,7 @@
                     android:id="@+id/fabConfig"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="onPerfil"
+                    android:onClick="onConfiguracion"
                     android:src="@drawable/fab_add"
                     fab:fab_label="Config"
                     fab:fab_size="mini" />

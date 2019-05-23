@@ -145,7 +145,7 @@
                 android:id="@+id/fabConfig"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onPerfil"
+                android:onClick="onConfiguracion"
                 android:src="@drawable/fab_add"
                 fab:fab_label="Config"
                 fab:fab_size="mini" />

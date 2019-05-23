@@ -31,93 +31,74 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView9"
-                    android:layout_width="95dp"
-                    android:layout_height="81dp"
-                    android:layout_marginStart="346dp"
-                    android:layout_marginTop="64dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="306dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/id_img_principal_user"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/logo" />
-
-                <ImageView
-                    android:id="@+id/id_img_principal_user"
-                    android:layout_width="169dp"
-                    android:layout_height="182dp"
+                    android:id="@+id/id_img_principal_local"
+                    android:layout_width="228dp"
+                    android:layout_height="239dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/id_nombre_principal_user"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/simpleTableLayout"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/perfil" />
 
                 <TextView
-                    android:id="@+id/id_edad_principal_user"
+                    android:id="@+id/id_edad_principal_local"
                     android:layout_width="wrap_content"
-                    android:layout_height="47dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="16dp"
-                    android:text="TextView"
-                    android:textSize="30dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:text="Edad: 30"
+                    app:layout_constraintBottom_toTopOf="@+id/simpleTableLayout"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.161"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/id_nacionalidad_principal_user" />
+                    app:layout_constraintStart_toEndOf="@+id/id_img_principal_local"
+                    app:layout_constraintTop_toBottomOf="@+id/id_nacionalidad_principal_local" />
 
                 <TextView
-                    android:id="@+id/id_nacionalidad_principal_user"
+                    android:id="@+id/id_nacionalidad_principal_local"
                     android:layout_width="wrap_content"
-                    android:layout_height="47dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="TextView"
-                    android:textSize="30dp"
-                    app:layout_constraintBottom_toTopOf="@+id/id_edad_principal_user"
-                    app:layout_constraintEnd_toStartOf="@+id/simpleTableLayout"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/id_nombre_principal_user" />
+                    android:text="Nacionalidad: Colombiano"
+                    app:layout_constraintBottom_toTopOf="@+id/id_edad_principal_local"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/id_img_principal_local"
+                    app:layout_constraintTop_toBottomOf="@+id/id_nombre_principal_local" />
 
                 <TextView
-                    android:id="@+id/id_nombre_principal_user"
+                    android:id="@+id/id_nombre_principal_local"
                     android:layout_width="wrap_content"
-                    android:layout_height="47dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="TextView"
-                    android:textSize="30dp"
-                    app:layout_constraintBottom_toTopOf="@+id/id_nacionalidad_principal_user"
-                    app:layout_constraintEnd_toStartOf="@+id/simpleTableLayout"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/id_img_principal_user" />
+                    android:text="Nombre: Pablo Andres"
+                    app:layout_constraintBottom_toTopOf="@+id/id_nacionalidad_principal_local"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/id_img_principal_local"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TableLayout
                     android:id="@+id/simpleTableLayout"
-                    android:layout_width="200dp"
-                    android:layout_height="187dp"
-                    android:layout_marginStart="64dp"
+                    android:layout_width="197dp"
+                    android:layout_height="144dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:stretchColumns="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@id/id_img_principal_user"
-                    app:layout_constraintTop_toTopOf="parent"> <!-- stretch the second column of the layout-->
+                    app:layout_constraintStart_toEndOf="@+id/id_img_principal_local"
+                    app:layout_constraintTop_toBottomOf="@+id/id_edad_principal_local"> <!-- stretch the second column of the layout-->
 
                     <!-- first row of the table layout-->
 
@@ -128,11 +109,11 @@
                         android:layout_height="match_parent">
 
                         <Button
-                            android:id="@+id/id_libros_principal"
+                            android:id="@+id/id_libros_principal_local"
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:background="@drawable/button_rounded"
-                            android:onClick="onClickLibros"
+                            android:onClick="onClickLibrosLocal"
                             android:text="Libros"
                             android:textColor="@color/cardview_light_background" />
                     </TableRow>
@@ -144,11 +125,11 @@
                         android:layout_height="match_parent">
 
                         <Button
-                            android:id="@+id/id_juegos"
+                            android:id="@+id/id_juegos_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/button_rounded"
-                            android:onClick="onClickJuegos"
+                            android:onClick="onClickJuegosLocal"
                             android:text="Juegos"
                             android:textColor="@color/cardview_light_background" />
                     </TableRow>
@@ -160,33 +141,16 @@
                         android:layout_height="match_parent">
 
                         <Button
-                            android:id="@+id/id_fotos"
+                            android:id="@+id/id_fotos_local"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/button_rounded"
-                            android:onClick="onClickFotos"
+                            android:onClick="onClickFotosLocal"
                             android:text="Fotos"
                             android:textColor="@color/cardview_light_background" />
                     </TableRow>
 
-                    <TableRow
-
-                        android:id="@+id/firstRow"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <Button
-                            android:id="@+id/id_chat"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/button_rounded"
-                            android:text="Chat"
-                            android:onClick="onClickChat"
-                            android:textColor="@color/cardview_light_background" />
-                    </TableRow>
-
                 </TableLayout>
-
                 <com.github.clans.fab.FloatingActionMenu
                     android:id="@+id/floatingMenu"
                     android:layout_width="173dp"

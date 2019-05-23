@@ -9,21 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".juegos_referencia_principal_otro_usuario"></activity>
-        <activity
-            android:name=".libros_referencia_principal_otro_usuario"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".galeria_fotos_principal_otro_usuario"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".perfil_usuario_local"></activity>
+        <activity android:name=".juegos_referencia_principal_otro_usuario" />
+        <activity android:name=".libros_referencia_principal_otro_usuario" />
+        <activity android:name=".galeria_fotos_principal_otro_usuario" />
         <activity android:name=".galeria_fotos_principal" />
         <activity android:name=".juegos_referencia_descripcion" />
         <activity android:name=".juegos_referencia_principal" />
         <activity android:name=".libros_principal_descripcion" />
-        <activity
-            android:name=".libros_principall"
-            android:label="@string/title_activity_libros_principall"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".libros_principall" />
         <activity android:name=".infouser_principal" />
         <activity android:name=".crear_evento" />
         <activity android:name=".buscar_personas" />

@@ -10,8 +10,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_crear_evento">crear_evento</string>
     <string name="title_activity_libros_principall">libros_principall</string>
-    <string name="opcion1">Primero</string>
-    <string name="opcion2">Segundo</string>
-    <string name="opcion3">Tercero</string>
-
+    <string name="title_activity_libros_referencia_principal_otro_usuario"></string>
+    <string name="title_activity_galeria_fotos_principal_otro_usuario"></string>
+    <string name="contentDescriptionImagenSet">This is where the picture is going to assign</string>
 </resources>

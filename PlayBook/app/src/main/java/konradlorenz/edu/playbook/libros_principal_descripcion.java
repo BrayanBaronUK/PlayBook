@@ -28,7 +28,7 @@ public class libros_principal_descripcion extends AppCompatActivity {
         String text = getIntent().getStringExtra("text");
         int foto = getIntent().getIntExtra("foto",0);
         List<libros_principal_atributos> series = new ArrayList<>();
-        series.add(new libros_principal_atributos("hola","hola",foto));
+        series.add(new libros_principal_atributos(titulo,text,foto));
         return series;
     }
 }

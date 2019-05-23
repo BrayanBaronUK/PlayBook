@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClick1 (View view) {
-        Intent miIntent = new Intent(MainActivity.this, juegosreferencia.class);
+        Intent miIntent = new Intent(MainActivity.this, juegos_referencia_principal.class);
         startActivity(miIntent);
     }
     public void onClicksal2 (View view) {
@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void onClickevej (View view) {
-        Intent miIntent = new Intent(MainActivity.this, juegosreferencia.class);
+        Intent miIntent = new Intent(MainActivity.this, juegos_referencia_principal.class);
         startActivity(miIntent);
     }
 

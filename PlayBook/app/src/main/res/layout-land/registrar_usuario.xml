@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,277 +9,224 @@
     tools:context=".registrar_usuario"
     android:background="#EEF9ED">
 
-    <LinearLayout
-        android:layout_width="290dp"
-        android:layout_height="406dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="266dp"
-            android:layout_height="395dp">
-
-            <LinearLayout
-                android:id="@+id/linearLayout18"
-                android:layout_width="241dp"
-                android:layout_height="68dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout17">
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="274dp"
-                    android:layout_height="133dp"
-                    app:cardBackgroundColor="#EEF9ED">
-
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="213dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/button_rounded"
-                        android:onClick="onClick"
-                        android:text="guardar"
-                        android:textColor="@color/cardview_light_background"
-                        android:textSize="18sp" />
-                </android.support.v7.widget.CardView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout17"
-                android:layout_width="250dp"
-                android:layout_height="216dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginBottom="8dp"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toTopOf="@+id/linearLayout18"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <android.support.v7.widget.CardView
-                    android:id="@+id/cadregistro"
-                    android:layout_width="match_parent"
-                    android:layout_height="78dp">
-
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#EEF9ED">
-
-                        <TextView
-                            android:id="@+id/textView18"
-                            android:layout_width="176dp"
-                            android:layout_height="29dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:text="Registrar información"
-                            android:textColor="@color/cardview_dark_background"
-                            android:textSize="18sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-                    </android.support.constraint.ConstraintLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher_foreground" />
-
-            </LinearLayout>
-
-        </android.support.constraint.ConstraintLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="349dp"
-        android:layout_height="397dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="6dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <android.support.v7.widget.CardView
-            android:layout_width="376dp"
-            android:layout_height="403dp"
+        <LinearLayout
+            android:id="@+id/linearLayout16"
+            android:layout_width="349dp"
+            android:layout_height="397dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:background="#EEF9ED"
-            app:cardBackgroundColor="#EEF9ED">
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.735"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout17"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="390dp"
                 android:layout_height="405dp"
                 android:background="#EEF9ED">
 
-                <LinearLayout
-                    android:layout_width="370dp"
-                    android:layout_height="391dp"
+                <EditText
+                    android:id="@+id/editText21"
+                    android:layout_width="312dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="6dp"
-                    android:layout_marginBottom="4dp"
-                    android:background="#EEF9ED"
-                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="nombre"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textColorHint="#9D9F9D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editText22"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editText22"
+                    android:layout_width="312dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="apellido"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textColorHint="#9D9F9D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editText24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText21" />
+
+                <EditText
+                    android:id="@+id/editText25"
+                    android:layout_width="312dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="pais"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textColorHint="#9D9F9D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editText23"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText26" />
+
+                <EditText
+                    android:id="@+id/editText23"
+                    android:layout_width="312dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="celular"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textColorHint="#9D9F9D"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toBottomOf="@+id/editText25" />
 
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="339dp"
-                        android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/editText26"
+                    android:layout_width="312dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="descripción"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textColorHint="#9D9F9D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editText25"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText24" />
 
-                        <EditText
-                            android:id="@+id/editText21"
-                            android:layout_width="312dp"
-                            android:layout_height="47dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:backgroundTint="@color/colorPrimary"
-                            android:ems="10"
-                            android:hint="nombre"
-                            android:inputType="textPersonName"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:textColorHint="#9D9F9D"
-                            android:textSize="18sp"
-                            app:layout_constraintBottom_toTopOf="@+id/editText22"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <EditText
-                            android:id="@+id/editText22"
-                            android:layout_width="312dp"
-                            android:layout_height="47dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:backgroundTint="@color/colorPrimary"
-                            android:ems="10"
-                            android:hint="apellido"
-                            android:inputType="textPersonName"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:textColorHint="#9D9F9D"
-                            android:textSize="18sp"
-                            app:layout_constraintBottom_toTopOf="@+id/editText25"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/editText21" />
-
-                        <EditText
-                            android:id="@+id/editText25"
-                            android:layout_width="312dp"
-                            android:layout_height="47dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:backgroundTint="@color/colorPrimary"
-                            android:ems="10"
-                            android:hint="pais"
-                            android:inputType="textPersonName"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:textColorHint="#9D9F9D"
-                            android:textSize="18sp"
-                            app:layout_constraintBottom_toTopOf="@+id/editText23"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/editText22" />
-
-                        <EditText
-                            android:id="@+id/editText23"
-                            android:layout_width="312dp"
-                            android:layout_height="47dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="7dp"
-                            android:backgroundTint="@color/colorPrimary"
-                            android:ems="10"
-                            android:hint="celular"
-                            android:inputType="textPersonName"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:textColorHint="#9D9F9D"
-                            android:textSize="18sp"
-                            app:layout_constraintBottom_toTopOf="@+id/editText24"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/editText25" />
-
-                        <EditText
-                            android:id="@+id/editText26"
-                            android:layout_width="312dp"
-                            android:layout_height="47dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="3dp"
-                            android:backgroundTint="@color/colorPrimary"
-                            android:ems="10"
-                            android:hint="descripción"
-                            android:inputType="textPersonName"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:textColorHint="#9D9F9D"
-                            android:textSize="18sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/editText24" />
-
-                        <EditText
-                            android:id="@+id/editText24"
-                            android:layout_width="312dp"
-                            android:layout_height="47dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:backgroundTint="@color/colorPrimary"
-                            android:ems="10"
-                            android:hint="género"
-                            android:inputType="textPersonName"
-                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                            android:textColorHint="#9D9F9D"
-                            android:textSize="18sp"
-                            app:layout_constraintBottom_toTopOf="@+id/editText26"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/editText23" />
-                    </android.support.constraint.ConstraintLayout>
-
-                </LinearLayout>
+                <EditText
+                    android:id="@+id/editText24"
+                    android:layout_width="312dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:ems="10"
+                    android:hint="género"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textColorHint="#9D9F9D"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editText26"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText22" />
 
             </android.support.constraint.ConstraintLayout>
-        </android.support.v7.widget.CardView>
-    </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout17"
+            android:layout_width="290dp"
+            android:layout_height="406dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="266dp"
+                android:layout_height="395dp">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="176dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Registrar información"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/button6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="213dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="56dp"
+                    android:background="@drawable/button_rounded"
+                    android:onClick="onClick"
+                    android:text="guardar"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.513"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline6"
@@ -295,4 +242,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

@@ -92,12 +92,13 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:ems="10"
-                android:hint="correo"
+                android:hint="contraseña"
                 android:inputType="textPersonName"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textColorHint="#9D9F9D"
                 app:layout_constraintBottom_toTopOf="@+id/button"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
@@ -111,13 +112,13 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:ems="10"
-                android:hint="contraseña"
+                android:hint="correo"
                 android:inputType="textPassword"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textColorHint="#9D9F9D"
                 app:layout_constraintBottom_toTopOf="@+id/editText4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintHorizontal_bias="0.503"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

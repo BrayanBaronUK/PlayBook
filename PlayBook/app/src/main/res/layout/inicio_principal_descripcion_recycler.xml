@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".inicio_principal_descripcion"
+    tools:context=".inicio_principal_descripcionn"
     android:background="#EEF9ED">
 
     <android.support.constraint.ConstraintLayout

@@ -21,8 +21,6 @@ public class infouser_principal_recycler extends RecyclerView.Adapter<infouser_p
         private TextView nacionalidad;
         private TextView edad;
         ImageView foto;
-        private TextView titulo;
-        ImageView fotoDescripcion;
         private View elementView;
 
 
@@ -32,8 +30,6 @@ public class infouser_principal_recycler extends RecyclerView.Adapter<infouser_p
             nacionalidad = (TextView) ItemView.findViewById(R.id.id_nacionalidad_principal_user);
             edad = (TextView) ItemView.findViewById(R.id.id_edad_principal_user);
             foto = (ImageView) ItemView.findViewById(R.id.id_img_principal_user);
-            titulo = (TextView) ItemView.findViewById(R.id.textView6);
-            fotoDescripcion = (ImageView) ItemView.findViewById(R.id.imageView12);
         }
     }
 
@@ -53,9 +49,7 @@ public class infouser_principal_recycler extends RecyclerView.Adapter<infouser_p
 
     @Override
     public void onBindViewHolder(infouser_principal_recycler.ViewHolder viewHoder, int i) {
-        viewHoder.fotoDescripcion.setImageResource((catalogo.get(i).getImgDescrocion()));
         viewHoder.foto.setImageResource((catalogo.get(i).getImg()));
-        viewHoder.titulo.setText(catalogo.get(i).getTitulo());
         viewHoder.nombre.setText(catalogo.get(i).getNombre());
         viewHoder.nacionalidad.setText(catalogo.get(i).getNacionalidad());
         viewHoder.edad.setText(catalogo.get(i).getEdad());

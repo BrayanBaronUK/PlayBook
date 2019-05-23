@@ -11,7 +11,7 @@ public class galeriafotos extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.galeriafotos);
+        setContentView(R.layout.activity_galeria_fotos_principal);
     }
 
     public void onClickjug(View view) {

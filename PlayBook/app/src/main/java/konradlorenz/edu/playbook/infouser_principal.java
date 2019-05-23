@@ -31,9 +31,18 @@ public class infouser_principal extends AppCompatActivity {
     }
 
     public void onClickLibros (View view) {
-        Intent miIntent = new Intent(this, libros_principall.class);
+        Intent miIntent = new Intent(this, libros_referencia_principal_otro_usuario.class);
         startActivity(miIntent);
     }
+    public void onClickJuegos (View view) {
+        Intent miIntent = new Intent(this, juegos_referencia_principal_otro_usuario.class);
+        startActivity(miIntent);
+    }
+    public void onClickFotos (View view) {
+        Intent miIntent = new Intent(this, galeria_fotos_principal_otro_usuario.class);
+        startActivity(miIntent);
+    }
+
 
     public List<infouser_principal_atributos> obtener(){
         String nombre = getIntent().getStringExtra("nombre");
@@ -41,7 +50,7 @@ public class infouser_principal extends AppCompatActivity {
         String edad = getIntent().getStringExtra("edad");
         int foto = getIntent().getIntExtra("foto",0);
         List<infouser_principal_atributos> series = new ArrayList<>();
-        series.add(new infouser_principal_atributos(nombre,nacionalidad,edad,"EL mejordfhfdhdfhfd",R.drawable.call,foto));
+        series.add(new infouser_principal_atributos(nombre,nacionalidad,edad,foto));
         return series;
     }
 

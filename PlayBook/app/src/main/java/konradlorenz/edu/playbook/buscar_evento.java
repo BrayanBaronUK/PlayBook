@@ -108,6 +108,10 @@ public class buscar_evento extends AppCompatActivity {
         Intent miIntent = new Intent(this, perfiluser.class);
         startActivity(miIntent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
+    public void onInicio(View view) {
+        Intent miIntent = new Intent(this, inicio_principall.class);
+        startActivity(miIntent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+    }
     //CSANCEHZC
 
 

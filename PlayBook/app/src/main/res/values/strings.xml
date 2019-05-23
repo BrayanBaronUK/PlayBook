@@ -16,7 +16,7 @@
 
     <string name="menuChat">Chat</string>
     <string name="menuSalir">Salir</string>
-    <string name="menuFotos">Fotos</string>
+    <string name="menuFotos">Inicio</string>
     <string name="menuPerfil">Perfil</string>
     <string name="menuConfig">Config</string>
     <string name="menuLibros">Libros</string>

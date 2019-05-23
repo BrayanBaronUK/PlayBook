@@ -110,6 +110,10 @@ public class infouser_principal extends AppCompatActivity {
         startActivity(miIntent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
+    public void onInicio(View view) {
+        Intent miIntent = new Intent(this, inicio_principall.class);
+        startActivity(miIntent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+    }
     public void onExplodeClicked(View view){
         transition = new Explode();
         iniciarActividadSecundaria();

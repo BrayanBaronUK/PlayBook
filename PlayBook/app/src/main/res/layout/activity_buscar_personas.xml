@@ -116,18 +116,9 @@
                 android:id="@+id/fabFoto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onFoto"
+                android:onClick="onInicio"
                 android:src="@drawable/fab_add"
-                fab:fab_label="Fotos"
-                fab:fab_size="mini" />
-
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/fabLibro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onLibro"
-                android:src="@drawable/fab_add"
-                fab:fab_label="Libros"
+                fab:fab_label="@string/menuFotos"
                 fab:fab_size="mini" />
 
             <com.github.clans.fab.FloatingActionButton

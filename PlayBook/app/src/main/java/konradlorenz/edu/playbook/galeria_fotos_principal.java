@@ -26,14 +26,14 @@ public class galeria_fotos_principal extends AppCompatActivity {
 
     public List<juegos_referencia_principal_atributos> obtener(){
         List<juegos_referencia_principal_atributos> series = new ArrayList<>();
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa8));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa9));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa10));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa11 ));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.libroa1));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.libroa2));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.libroa3));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.libroa4 ));
+        series.add(new juegos_referencia_principal_atributos("Call Of Duty","EL mejor juego",R.drawable.juegoa8));
+        series.add(new juegos_referencia_principal_atributos("Fifa 16","EL mejor juego",R.drawable.juegoa9));
+        series.add(new juegos_referencia_principal_atributos("Tom Raider","EL mejor juego",R.drawable.juegoa10));
+        series.add(new juegos_referencia_principal_atributos("Seins Reins","EL mejor juego",R.drawable.juegoa11 ));
+        series.add(new juegos_referencia_principal_atributos("Call Of Duty","EL mejor juego",R.drawable.libroa1));
+        series.add(new juegos_referencia_principal_atributos("Fifa 16","EL mejor juego",R.drawable.libroa2));
+        series.add(new juegos_referencia_principal_atributos("Tom Raider","EL mejor juego",R.drawable.libroa3));
+        series.add(new juegos_referencia_principal_atributos("Tom Raider","EL mejor juego",R.drawable.libroa4 ));
         return series;
     }
 }

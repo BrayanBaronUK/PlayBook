@@ -26,10 +26,10 @@ public class buscar_personas extends AppCompatActivity {
 
     public List<buscar_personas_atributos> obtener(){
         List<buscar_personas_atributos> series = new ArrayList<>();
-        series.add(new buscar_personas_atributos("Nombre: Juliana","Nacionadlidad : Colombiana","Edad: 30",R.drawable.acto1));
-        series.add(new buscar_personas_atributos("Nombre: Carlos", "Nacionalidad: Alemana", "Edad: 20",R.drawable.actor2));
-        series.add(new buscar_personas_atributos("Nombre: Maria", "Nacionalidad: Colombiana", "Edad: 25",R.drawable.actor3));
-        series.add(new buscar_personas_atributos("Nombre: Cesar", "Nacionalidad: Colombiano","Edad: 19",R.drawable.actor4));
+        series.add(new buscar_personas_atributos("Nombre: Jim Carrey","Nacionadlidad : Ecuatoriana","Edad: 30",R.drawable.acto1));
+        series.add(new buscar_personas_atributos("Nombre: Sandra Torres", "Nacionalidad: Alemana", "Edad: 20",R.drawable.actor2));
+        series.add(new buscar_personas_atributos("Nombre: Arnold", "Nacionalidad: Africana", "Edad: 25",R.drawable.actor3));
+        series.add(new buscar_personas_atributos("Nombre: Andrea Johanson", "Nacionalidad: Estadounidense","Edad: 19",R.drawable.actor4));
         return series;
     }
 }

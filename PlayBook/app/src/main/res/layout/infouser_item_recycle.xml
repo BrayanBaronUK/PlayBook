@@ -12,83 +12,35 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout16"
-            android:layout_width="185dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/linearLayout15"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/imageView12"
-                    android:layout_width="85dp"
-                    android:layout_height="147dp"
-                    android:layout_marginStart="55dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="55dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_weight="1"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6"
-                    app:srcCompat="@drawable/call" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="16dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    app:layout_constraintBottom_toTopOf="@+id/imageView12"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </android.support.constraint.ConstraintLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
             android:id="@+id/linearLayout15"
-            android:layout_width="163dp"
-            android:layout_height="700dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/contraint_user"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/id_img_principal_user"
                     android:layout_width="140dp"
                     android:layout_height="159dp"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="64dp"
+                    android:layout_marginTop="70dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/id_nombre_principal_user"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/perfil" />
@@ -98,9 +50,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="49dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="49dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="16dp"
                     android:text="TextView"
                     app:layout_constraintBottom_toTopOf="@+id/simpleTableLayout"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -112,9 +64,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="48dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="48dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="16dp"
                     android:text="TextView"
                     app:layout_constraintBottom_toTopOf="@+id/id_edad_principal_user"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -126,9 +78,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="49dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="49dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="16dp"
                     android:text="TextView"
                     app:layout_constraintBottom_toTopOf="@+id/id_nacionalidad_principal_user"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -137,12 +89,12 @@
 
                 <TableLayout
                     android:id="@+id/simpleTableLayout"
-                    android:layout_width="148dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="194dp"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="32dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="200dp"
+                    android:layout_marginBottom="100dp"
                     android:stretchColumns="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -171,18 +123,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <!-- first element of the row-->
-                        <TextView
-
-                            android:id="@+id/simpleTextView13"
+                        <Button
+                            android:id="@+id/id_juegos"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="#D4DED4"
-                            android:padding="18dip"
-                            android:text="Juegos"
-                            android:textColor="#000"
-                            android:textSize="14sp" />
-
+                            android:onClick="onClickJuegos"
+                            android:text="Juegos" />
                     </TableRow>
 
                     <TableRow
@@ -191,18 +137,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <!-- first element of the row-->
-                        <TextView
-
-                            android:id="@+id/simpleTextView7"
-                            android:layout_width="140dp"
+                        <Button
+                            android:id="@+id/id_fotos"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="#D4DED4"
-                            android:padding="18dip"
-                            android:text="Fotos"
-                            android:textColor="#000"
-                            android:textSize="14sp" />
-
+                            android:onClick="onClickFotos"
+                            android:text="Fotos" />
                     </TableRow>
 
                     <TableRow
@@ -211,18 +151,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <!-- first element of the row-->
-                        <TextView
-
-                            android:id="@+id/simpleTextView1"
+                        <Button
+                            android:id="@+id/id_chat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="#D4DED4"
-                            android:padding="18dip"
-                            android:text="Información"
-                            android:textColor="#000"
-                            android:textSize="14sp" />
-
+                            android:text="Chat" />
                     </TableRow>
 
                 </TableLayout>

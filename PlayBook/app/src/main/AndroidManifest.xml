@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".libros_principal_descripcion"></activity>
+        <activity android:name=".juegos_referencia_principal_otro_usuario"></activity>
+        <activity
+            android:name=".libros_referencia_principal_otro_usuario"
+            android:label="@string/title_activity_libros_referencia_principal_otro_usuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".galeria_fotos_principal_otro_usuario"
+            android:label="@string/title_activity_galeria_fotos_principal_otro_usuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".galeria_fotos_principal" />
+        <activity android:name=".juegos_referencia_descripcion" />
+        <activity android:name=".juegos_referencia_principal" />
+        <activity android:name=".libros_principal_descripcion" />
         <activity
             android:name=".libros_principall"
             android:label="@string/title_activity_libros_principall"
@@ -30,7 +42,6 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ventana2" />
         <activity android:name=".buscar_evento" />
-        <activity android:name=".juegosreferencia" />
         <activity android:name=".disponibilidad" />
         <activity android:name=".chat_messages" />
         <activity android:name=".recuperar_contrasena" />

@@ -12,11 +12,9 @@
         <activity android:name=".juegos_referencia_principal_otro_usuario"></activity>
         <activity
             android:name=".libros_referencia_principal_otro_usuario"
-            android:label="@string/title_activity_libros_referencia_principal_otro_usuario"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".galeria_fotos_principal_otro_usuario"
-            android:label="@string/title_activity_galeria_fotos_principal_otro_usuario"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".galeria_fotos_principal" />
         <activity android:name=".juegos_referencia_descripcion" />

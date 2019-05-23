@@ -36,10 +36,10 @@ public class inicio_principall extends AppCompatActivity {
 
     public List<inicio_principal_atributos> obtener(){
         List<inicio_principal_atributos> series = new ArrayList<>();
-        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.call ));
+        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa16));
+        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa17));
+        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa18));
+        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa19 ));
         return series;
     }
 }

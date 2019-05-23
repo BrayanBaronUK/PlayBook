@@ -27,7 +27,7 @@ public class buscar_evento extends AppCompatActivity {
     }
     public List<inicio_principal_atributos> obtener(){
         List<inicio_principal_atributos> series = new ArrayList<>();
-        series.add(new inicio_principal_atributos("100 Años portada","Libro de ciencias naturakes para la mayor diversion de los alumnos",R.drawable.libroa15));
+        series.add(new inicio_principal_atributos("100 Años portada","Libro de ciencias naturales para la mayor diversion de los alumnos",R.drawable.libroa15));
         series.add(new inicio_principal_atributos("Ejecutivo Trotamundo","De ejecutivo a trotamundos narra la historia de Francisco, ejecutivo en lo más alto de esa espiral socioeconómica en la que tienen puestos los ojos nuestros padres y abuelos ",R.drawable.libroa16));
         series.add(new inicio_principal_atributos("Nuestra Señora Paris","Nuestra Señora de París es una novela de Victor Hugo, publicada en 1831 y compuesta por once libros que se centra en la desdichada historia de Esmeralda",R.drawable.libroa17));
         series.add(new inicio_principal_atributos("La Banda que Escriba Torcido","Wolfe y muchos de sus contemporáneos reconocieron un hecho destacado en el acontecer de los años sesenta: las herramientas tradicionales.",R.drawable.libroa18));

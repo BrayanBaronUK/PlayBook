@@ -159,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:onClick="onChat"
                     android:src="@drawable/fab_add"
-                    fab:fab_label="Chat"
+                    fab:fab_label="@string/menuChat"
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
@@ -168,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:onClick="onFoto"
                     android:src="@drawable/fab_add"
-                    fab:fab_label="Fotos"
+                    fab:fab_label="@string/menuFotos"
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
@@ -177,7 +177,7 @@
                     android:layout_height="wrap_content"
                     android:onClick="onLibro"
                     android:src="@drawable/fab_add"
-                    fab:fab_label="Libros"
+                    fab:fab_label="@string/menuLibros"
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
@@ -186,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:onClick="onPerfillocal"
                     android:src="@drawable/fab_add"
-                    fab:fab_label="Perfil"
+                    fab:fab_label="@string/menuPerfil"
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
@@ -195,7 +195,7 @@
                     android:layout_height="wrap_content"
                     android:onClick="onConfiguracion"
                     android:src="@drawable/fab_add"
-                    fab:fab_label="Config"
+                    fab:fab_label="@string/menuConfig"
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
@@ -204,7 +204,7 @@
                     android:layout_height="wrap_content"
                     android:onClick="onSalir"
                     android:src="@drawable/fab_add"
-                    fab:fab_label="Salir"
+                    fab:fab_label="@string/menuSalir"
                     fab:fab_size="mini" />
 
             </com.github.clans.fab.FloatingActionMenu>

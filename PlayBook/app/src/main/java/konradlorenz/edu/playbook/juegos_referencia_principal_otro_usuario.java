@@ -25,14 +25,14 @@ public class juegos_referencia_principal_otro_usuario extends AppCompatActivity 
     }
     public List<juegos_referencia_principal_atributos> obtener(){
         List<juegos_referencia_principal_atributos> series = new ArrayList<>();
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa8));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa9));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa10));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa11));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa12));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa13));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa14));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa15));
+        series.add(new juegos_referencia_principal_atributos("Call Of Duty","Call of Duty es una serie de videojuegos de disparos en primera persona, de estilo bélico, creada por Ben Chichoski, desarrollada principal e inicialmente por Infinity Ward.",R.drawable.juegoa16));
+        series.add(new juegos_referencia_principal_atributos("Fifa 16","FIFA 16 es un videojuego de fútbol desarrollado por EA Canadá y publicado por EA Sports. Es el 23.º de la serie y salió a la venta el 22 de septiembre en América del Norte y el 24 de septiembre en Europa.",R.drawable.juegoa17));
+        series.add(new juegos_referencia_principal_atributos("Tom Raider","FIFA 16 es un videojuego de fútbol desarrollado por EA Canadá y publicado por EA Sports. Es el 23.º de la serie y salió a la venta el 22 de septiembre en América del Norte y el 24 de septiembre en Europa.",R.drawable.juegoa18));
+        series.add(new juegos_referencia_principal_atributos("Call Of Duty","Call of Duty es una serie de videojuegos de disparos en primera persona, de estilo bélico, creada por Ben Chichoski, desarrollada principal e inicialmente por Infinity Ward.",R.drawable.juegoa16));
+        series.add(new juegos_referencia_principal_atributos("Fifa 16","FIFA 16 es un videojuego de fútbol desarrollado por EA Canadá y publicado por EA Sports. Es el 23.º de la serie y salió a la venta el 22 de septiembre en América del Norte y el 24 de septiembre en Europa.",R.drawable.juegoa17));
+        series.add(new juegos_referencia_principal_atributos("Tom Raider","FIFA 16 es un videojuego de fútbol desarrollado por EA Canadá y publicado por EA Sports. Es el 23.º de la serie y salió a la venta el 22 de septiembre en América del Norte y el 24 de septiembre en Europa.",R.drawable.juegoa18));
+        series.add(new juegos_referencia_principal_atributos("Steins Gate","Steins;Gate es una novela visual japonesa desarrollada por 5pb. y Nitroplus, y fue lanzada el 15 de octubre de 2009 para la Xbox 360.",R.drawable.juegoa19 ));
+        series.add(new juegos_referencia_principal_atributos("Steins Gate","Steins;Gate es una novela visual japonesa desarrollada por 5pb. y Nitroplus, y fue lanzada el 15 de octubre de 2009 para la Xbox 360.",R.drawable.juegoa19 ));
         return series;
     }
 }

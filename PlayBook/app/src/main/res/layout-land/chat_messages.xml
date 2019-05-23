@@ -14,8 +14,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout8"
-            android:layout_width="712dp"
-            android:layout_height="242dp"
+            android:layout_width="698dp"
+            android:layout_height="191dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -27,8 +27,8 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <android.support.constraint.ConstraintLayout
-                android:layout_width="702dp"
-                android:layout_height="237dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="#EEF9ED">
 
                 <TextView
@@ -49,12 +49,11 @@
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="385dp"
-                    android:layout_height="182dp"
+                    android:layout_width="374dp"
+                    android:layout_height="116dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
                     android:text="messages"
                     android:textAlignment="viewStart"
                     android:textColor="#000000"
@@ -69,8 +68,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="370dp"
-            android:layout_height="153dp"
+            android:layout_width="376dp"
+            android:layout_height="96dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"

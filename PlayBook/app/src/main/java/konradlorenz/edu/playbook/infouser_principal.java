@@ -22,7 +22,6 @@ public class infouser_principal extends AppCompatActivity {
     private RecyclerView recyclerView;
     private infouser_principal_recycler adaptador;
     private Transition transition;
-    private inicio_principal_recycler adaptador2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

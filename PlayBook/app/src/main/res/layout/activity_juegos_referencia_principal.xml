@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF9ED"
-    tools:context=".juegosreferencia">
+    tools:context=".juegos_referencia_principal">
 
     <android.support.constraint.ConstraintLayout
 
@@ -140,6 +140,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/button_rounded"
                     android:text="Cargar Referencia"
+                    android:onClick="onClickreflibro"
                     android:textColor="@color/cardview_light_background"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

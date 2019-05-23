@@ -59,7 +59,7 @@ public class inicio_principall extends AppCompatActivity {
         Intent miIntent = new Intent(this, galeria_fotos_principal.class);
         startActivity(miIntent);
     }
-    public void onPerfil(View view) {
+    public void onPerfillocal(View view) {
         Intent miIntent = new Intent(this, perfil_usuario_local.class);
         startActivity(miIntent);
     }

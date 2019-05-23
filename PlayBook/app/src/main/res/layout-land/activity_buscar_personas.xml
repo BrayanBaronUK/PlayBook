@@ -114,29 +114,13 @@
                 fab:fab_label="Chat"
                 fab:fab_size="mini" />
 
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/fabFoto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onFoto"
-                android:src="@drawable/fab_add"
-                fab:fab_label="Fotos"
-                fab:fab_size="mini" />
 
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/fabLibro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onLibro"
-                android:src="@drawable/fab_add"
-                fab:fab_label="Libros"
-                fab:fab_size="mini" />
 
             <com.github.clans.fab.FloatingActionButton
                 android:id="@+id/fabPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onPerfil"
+                android:onClick="onPerfillocal"
                 android:src="@drawable/fab_add"
                 fab:fab_label="Perfil"
                 fab:fab_size="mini" />

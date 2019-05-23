@@ -134,7 +134,7 @@
                 android:id="@+id/fabPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onPerfil"
+                android:onClick="onPerfillocal"
                 android:src="@drawable/fab_add"
                 fab:fab_label="Perfil"
                 fab:fab_size="mini" />

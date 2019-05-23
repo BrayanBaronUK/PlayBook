@@ -57,5 +57,33 @@ public class infouser_principal extends AppCompatActivity {
         series.add(new infouser_principal_atributos(nombre,nacionalidad,edad,foto));
         return series;
     }
+    public void onChat(View view) {
+        Intent miIntent = new Intent(this, disponibilidad.class);
+        startActivity(miIntent);
+    }
+    public void onLibro(View view) {
+        Intent miIntent = new Intent(this, libros_principall.class);
+        startActivity(miIntent);
+    }
+    public void onJuego(View view) {
+        Intent miIntent = new Intent(this, disponibilidad.class);
+        startActivity(miIntent);
+    }
+    public void onFoto(View view) {
+        Intent miIntent = new Intent(this, galeria_fotos_principal.class);
+        startActivity(miIntent);
+    }
+    public void onPerfillocal(View view) {
+        Intent miIntent = new Intent(this, perfil_usuario_local.class);
+        startActivity(miIntent);
+    }
+    public void onSalir(View view) {
+        Intent miIntent = new Intent(this, inicio_sesion.class);
+        startActivity(miIntent);
+    }
+    public void onConfiguracion(View view) {
+        Intent miIntent = new Intent(this, perfiluser.class);
+        startActivity(miIntent);
+    }
 
 }

@@ -1,9 +1,12 @@
 package konradlorenz.edu.playbook;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,4 +39,9 @@ public class galeria_fotos_principal extends AppCompatActivity {
         series.add(new juegos_referencia_principal_atributos("Tom Raider","Tomb Raider, también conocida como Lara Croft: Tomb Raider entre 2001 y 2007, es una franquicia de medios que se originó con una serie de videojuegos",R.drawable.libroa4 ));
         return series;
     }
+    public void onSubirfoto(View view) {
+        Intent miIntent = new Intent(this, referencia_foto.class);
+        startActivity(miIntent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+    }
+
 }

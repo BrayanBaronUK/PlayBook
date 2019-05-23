@@ -45,6 +45,7 @@
         <activity android:name=".ventana11" />
         <activity android:name=".editarinformacion" />
         <activity android:name=".inicio" />
+        <activity android:name=".referencia_foto" />
     </application>
 
 </manifest>

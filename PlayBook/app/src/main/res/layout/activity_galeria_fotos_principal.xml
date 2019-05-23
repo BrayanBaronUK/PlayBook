@@ -87,6 +87,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/button_rounded"
+                    android:onClick="onSubirfoto"
                     android:text="Subir Foto"
                     android:textColor="@color/cardview_light_background"
                     app:layout_constraintBottom_toBottomOf="parent"

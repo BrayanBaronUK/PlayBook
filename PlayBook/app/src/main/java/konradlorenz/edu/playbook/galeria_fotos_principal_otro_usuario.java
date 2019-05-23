@@ -1,5 +1,6 @@
 package konradlorenz.edu.playbook;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -41,5 +42,6 @@ public class galeria_fotos_principal_otro_usuario extends AppCompatActivity {
         series.add(new juegos_referencia_principal_atributos("Fifa16","FIFA 16 es un videojuego de fútbol desarrollado por EA Canadá y publicado por EA Sports. Es el 23.º de la serie y salió a la venta el 22 de septiembre en América del Norte y el 24 de septiembre en Europa.",R.drawable.juegosa1 ));
         return series;
     }
+
 
 }

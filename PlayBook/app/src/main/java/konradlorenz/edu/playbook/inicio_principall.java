@@ -19,7 +19,7 @@ public class inicio_principall extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_principall);
 
-        recyclerView = (RecyclerView)findViewById(R.id.idrcyclerprincipal);
+        recyclerView = findViewById(R.id.idrcyclerprincipal);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(m);
         adaptador = new inicio_principal_recycler(this,obtener());
@@ -41,5 +41,9 @@ public class inicio_principall extends AppCompatActivity {
         series.add(new inicio_principal_atributos("Tom Raider","FIFA 16 es un videojuego de fútbol desarrollado por EA Canadá y publicado por EA Sports. Es el 23.º de la serie y salió a la venta el 22 de septiembre en América del Norte y el 24 de septiembre en Europa.",R.drawable.juegoa18));
         series.add(new inicio_principal_atributos("Steins Gate","Steins;Gate es una novela visual japonesa desarrollada por 5pb. y Nitroplus, y fue lanzada el 15 de octubre de 2009 para la Xbox 360.",R.drawable.juegoa19 ));
         return series;
+    }
+    public void onChat(View view) {
+        Intent miIntent = new Intent(this, disponibilidad.class);
+        startActivity(miIntent);
     }
 }

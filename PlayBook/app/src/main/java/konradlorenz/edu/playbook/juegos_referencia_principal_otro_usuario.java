@@ -17,7 +17,7 @@ public class juegos_referencia_principal_otro_usuario extends AppCompatActivity 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juegos_referencia_principal_otro_usuario);
 
-        recyclerView = (RecyclerView)findViewById(R.id.id_recycñler_juegos_referencia);
+        recyclerView = findViewById(R.id.id_recycñler_juegos_referencia);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(m);
         adaptador = new juegos_referencia_principal_recycler(this,obtener());

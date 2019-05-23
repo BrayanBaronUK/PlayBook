@@ -22,7 +22,7 @@ public class libros_principall extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_libros_principall);
 
-        recyclerView = (RecyclerView)findViewById(R.id.idrcyclerprincipallibro);
+        recyclerView = findViewById(R.id.idrcyclerprincipallibro);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(m);
         adaptador = new libros_principal_recycler(this,obtener());

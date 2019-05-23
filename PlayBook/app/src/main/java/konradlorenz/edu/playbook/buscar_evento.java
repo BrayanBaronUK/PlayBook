@@ -19,7 +19,7 @@ public class buscar_evento extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.buscar_evento);
 
-        recyclerView = (RecyclerView)findViewById(R.id.idrcyclerprincipal);
+        recyclerView = findViewById(R.id.idrcyclerprincipal);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(m);
         adaptador = new inicio_principal_recycler(this,obtener());

@@ -27,10 +27,10 @@ public class buscar_evento extends AppCompatActivity {
     }
     public List<inicio_principal_atributos> obtener(){
         List<inicio_principal_atributos> series = new ArrayList<>();
-        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.call ));
+        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.libroa15));
+        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.libroa16));
+        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.libroa17));
+        series.add(new inicio_principal_atributos("rtr","EL mejor juego",R.drawable.libroa18));
         return series;
     }
     public void onClickCrearEvento(View view) {

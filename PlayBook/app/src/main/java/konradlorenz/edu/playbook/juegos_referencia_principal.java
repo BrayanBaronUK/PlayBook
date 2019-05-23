@@ -27,13 +27,13 @@ public class juegos_referencia_principal extends AppCompatActivity {
     public List<juegos_referencia_principal_atributos> obtener(){
         List<juegos_referencia_principal_atributos> series = new ArrayList<>();
         series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.call ));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.call));
-        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.call ));
+        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegosa1));
+        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegos2));
+        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa3 ));
+        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa4));
+        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa5));
+        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa6));
+        series.add(new juegos_referencia_principal_atributos("rtr","EL mejor juego",R.drawable.juegoa7 ));
         return series;
     }
 

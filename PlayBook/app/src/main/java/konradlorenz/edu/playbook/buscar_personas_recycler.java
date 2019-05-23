@@ -1,5 +1,7 @@
 package konradlorenz.edu.playbook;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -70,7 +72,7 @@ public class buscar_personas_recycler extends RecyclerView.Adapter<buscar_person
                 miIntent.putExtra("nacionalidad", serie.getNacionalidad());
                 miIntent.putExtra("edad", serie.getEdad());
                 miIntent.putExtra("foto", serie.getImg());
-                m.startActivity(miIntent);
+                m.startActivity(miIntent, ActivityOptions.makeSceneTransitionAnimation((Activity) view.getContext()).toBundle());
             }
         });
     }

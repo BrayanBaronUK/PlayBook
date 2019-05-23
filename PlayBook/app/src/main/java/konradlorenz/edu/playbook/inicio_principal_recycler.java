@@ -2,6 +2,7 @@ package konradlorenz.edu.playbook;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -72,7 +73,7 @@ public class inicio_principal_recycler extends RecyclerView.Adapter<inicio_princ
                 miIntent.putExtra("titulo", serie.getTitulo());
                 miIntent.putExtra("text", serie.getText());
                 miIntent.putExtra("foto", serie.getImg());
-                m.startActivity(miIntent);
+                m.startActivity(miIntent, ActivityOptions.makeSceneTransitionAnimation((Activity) view.getContext()).toBundle());
             }
         });
     }

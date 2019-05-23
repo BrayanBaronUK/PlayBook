@@ -26,10 +26,10 @@ public class infouser_principal_recycler extends RecyclerView.Adapter<infouser_p
 
         public ViewHolder(View ItemView) {
             super(ItemView);
-            nombre = (TextView) ItemView.findViewById(R.id.id_nombre_principal_user);
-            nacionalidad = (TextView) ItemView.findViewById(R.id.id_nacionalidad_principal_user);
-            edad = (TextView) ItemView.findViewById(R.id.id_edad_principal_user);
-            foto = (ImageView) ItemView.findViewById(R.id.id_img_principal_user);
+            nombre = ItemView.findViewById(R.id.id_nombre_principal_user);
+            nacionalidad = ItemView.findViewById(R.id.id_nacionalidad_principal_user);
+            edad = ItemView.findViewById(R.id.id_edad_principal_user);
+            foto = ItemView.findViewById(R.id.id_img_principal_user);
         }
     }
 

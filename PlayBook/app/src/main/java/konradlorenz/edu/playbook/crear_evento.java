@@ -51,9 +51,9 @@ public class crear_evento extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_evento);
 
-        mSetImage = (ImageView) findViewById(R.id.set_picture);
-        mOptionButton = (Button) findViewById(R.id.show_options_button);
-        mRlView = (RelativeLayout) findViewById(R.id.rl_view);
+        mSetImage = findViewById(R.id.set_picture);
+        mOptionButton = findViewById(R.id.show_options_button);
+        mRlView = findViewById(R.id.rl_view);
 
         if(mayRequestStoragePermission())
             mOptionButton.setEnabled(true);
@@ -107,7 +107,7 @@ public class crear_evento extends AppCompatActivity {
                 }else if(option[which] == "Elegir de galeria"){
                     Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     intent.setType("image/*");
-                    startActivityForResult(intent.createChooser(intent, "Selecciona app de imagen"), SELECT_PICTURE);
+                    startActivityForResult(Intent.createChooser(intent, "Selecciona app de imagen"), SELECT_PICTURE);
                 }else {
                     dialog.dismiss();
                 }

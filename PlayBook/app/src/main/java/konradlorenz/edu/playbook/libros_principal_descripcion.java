@@ -17,7 +17,7 @@ public class libros_principal_descripcion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_libros_principal_descripcion);
 
-        recyclerView = (RecyclerView)findViewById(R.id.id_principal_description_recycler);
+        recyclerView = findViewById(R.id.id_principal_description_recycler);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(m);
         adaptador = new libros_principal_descripcion_recycler(obtener());

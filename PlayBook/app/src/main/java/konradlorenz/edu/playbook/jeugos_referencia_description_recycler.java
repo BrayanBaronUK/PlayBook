@@ -25,9 +25,9 @@ public class jeugos_referencia_description_recycler extends RecyclerView.Adapter
         public ViewHolder(View ItemView) {
             super(ItemView);
 
-            titulo = (TextView) ItemView.findViewById(R.id.id_principal_titulo_juegos);
-            text     = (TextView) ItemView.findViewById(R.id.id_principal_text_juegos);
-            foto = (ImageView) ItemView.findViewById(R.id.id_principal_img_juegos);
+            titulo = ItemView.findViewById(R.id.id_principal_titulo_juegos);
+            text     = ItemView.findViewById(R.id.id_principal_text_juegos);
+            foto = ItemView.findViewById(R.id.id_principal_img_juegos);
             elementView = ItemView;
         }
     }

@@ -17,7 +17,7 @@ public class buscar_personas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buscar_personas);
 
-        recyclerView = (RecyclerView)findViewById(R.id.id_recicler_personas);
+        recyclerView = findViewById(R.id.id_recicler_personas);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(m);
         adaptador = new buscar_personas_recycler(this,obtener());

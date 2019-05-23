@@ -21,7 +21,7 @@ public class infouser_principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_infouser_principal);
 
-        recyclerView = (RecyclerView)findViewById(R.id.id_principal_user_recycler);
+        recyclerView = findViewById(R.id.id_principal_user_recycler);
         RecyclerView.LayoutManager m = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(m);
         adaptador = new infouser_principal_recycler(obtener());

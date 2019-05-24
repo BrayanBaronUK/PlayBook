@@ -22,16 +22,40 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/linearLayout10"
-                android:layout_width="231dp"
-                android:layout_height="match_parent"
+                android:id="@+id/linearLayout50"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/idrcyclerprincipal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout10"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/idrcyclerprincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout50"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -41,12 +65,12 @@
 
                     <Button
                         android:id="@+id/button21"
-                        android:layout_width="200dp"
-                        android:layout_height="47dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="80dp"
+                        android:layout_marginBottom="8dp"
                         android:background="@drawable/button_rounded"
                         android:onClick="onClickBuscarPersona"
                         android:text="buscar personas"
@@ -58,12 +82,12 @@
 
                     <Button
                         android:id="@+id/button16"
-                        android:layout_width="200dp"
-                        android:layout_height="47dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="32dp"
+                        android:layout_marginBottom="8dp"
                         android:background="@drawable/button_rounded"
                         android:onClick="onClickBuscarEvento"
                         android:text="buscar eventos"
@@ -79,9 +103,9 @@
                         android:layout_height="105dp"
 
                         android:layout_marginStart="8dp"
-                        android:layout_marginTop="56dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="32dp"
+                        android:layout_marginBottom="8dp"
                         app:layout_constraintBottom_toTopOf="@+id/button16"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -92,37 +116,25 @@
 
             </LinearLayout>
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/idrcyclerprincipal"
-                android:layout_width="421dp"
-                android:layout_height="369dp"
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/floatingMenu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/linearLayout10"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.github.clans.fab.FloatingActionMenu
-                android:id="@+id/floatingMenu"
-                android:layout_width="145dp"
-                android:layout_height="418dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
                 android:padding="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.972"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
-                app:menu_backgroundColor="@android:color/transparent"
+                fab:layout_constraintBottom_toBottomOf="parent"
+                fab:layout_constraintEnd_toEndOf="parent"
+                fab:layout_constraintHorizontal_bias="0.972"
+                fab:layout_constraintStart_toStartOf="parent"
+                fab:layout_constraintTop_toTopOf="parent"
+                fab:layout_constraintVertical_bias="1.0"
                 fab:menu_animationDelayPerItem="0"
+                fab:menu_backgroundColor="@android:color/transparent"
                 fab:menu_colorNormal="#00C29F"
                 fab:menu_colorPressed="#00C29F"
                 fab:menu_colorRipple="#00C29F"
@@ -137,15 +149,6 @@
                     android:onClick="onChat"
                     android:src="@drawable/fab_add"
                     fab:fab_label="Chat"
-                    fab:fab_size="mini" />
-
-                <com.github.clans.fab.FloatingActionButton
-                    android:id="@+id/fabFoto"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onInicio"
-                    android:src="@drawable/fab_add"
-                    fab:fab_label="@string/menuFotos"
                     fab:fab_size="mini" />
 
                 <com.github.clans.fab.FloatingActionButton
@@ -175,6 +178,7 @@
                     fab:fab_size="mini" />
 
             </com.github.clans.fab.FloatingActionMenu>
+
         </android.support.constraint.ConstraintLayout>
 
 

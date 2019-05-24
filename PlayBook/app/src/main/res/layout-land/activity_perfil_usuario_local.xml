@@ -14,12 +14,11 @@
 
         <LinearLayout
             android:id="@+id/linearLayout15"
-            android:layout_width="600dp"
-            android:layout_height="392dp"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginBottom="2dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,65 +30,86 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/id_img_principal_local"
-                    android:layout_width="189dp"
-                    android:layout_height="220dp"
+                <LinearLayout
+                    android:id="@+id/linearLayout52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/simpleTableLayout"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/perfil" />
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/id_edad_principal_local"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="Edad: 30"
-                    app:layout_constraintBottom_toTopOf="@+id/simpleTableLayout"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/id_img_principal_local"
-                    app:layout_constraintTop_toBottomOf="@+id/id_nacionalidad_principal_local" />
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/id_nacionalidad_principal_local"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="Nacionalidad: Colombiano"
-                    app:layout_constraintBottom_toTopOf="@+id/id_edad_principal_local"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/id_img_principal_local"
-                    app:layout_constraintTop_toBottomOf="@+id/id_nombre_principal_local" />
+                        <ImageView
+                            android:id="@+id/id_img_principal_local"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toTopOf="@+id/id_nombre_principal_local"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/perfil" />
 
-                <TextView
-                    android:id="@+id/id_nombre_principal_local"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="Nombre: Pablo Andres"
-                    app:layout_constraintBottom_toTopOf="@+id/id_nacionalidad_principal_local"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/id_img_principal_local"
-                    app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/id_nombre_principal_local"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Nombre: Pablo Andres"
+                            app:layout_constraintBottom_toTopOf="@+id/id_nacionalidad_principal_local"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/id_img_principal_local" />
+
+                        <TextView
+                            android:id="@+id/id_nacionalidad_principal_local"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Nacionalidad: Colombiano"
+                            app:layout_constraintBottom_toTopOf="@+id/id_edad_principal_local"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/id_nombre_principal_local" />
+
+                        <TextView
+                            android:id="@+id/id_edad_principal_local"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Edad: 30"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/id_nacionalidad_principal_local" />
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
 
                 <TableLayout
                     android:id="@+id/simpleTableLayout"
-                    android:layout_width="197dp"
-                    android:layout_height="144dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
@@ -97,8 +117,8 @@
                     android:stretchColumns="1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/id_img_principal_local"
-                    app:layout_constraintTop_toBottomOf="@+id/id_edad_principal_local"> <!-- stretch the second column of the layout-->
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout52"
+                    app:layout_constraintTop_toTopOf="parent"> <!-- stretch the second column of the layout-->
 
                     <!-- first row of the table layout-->
 
@@ -108,14 +128,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <Button
-                            android:id="@+id/id_libros_principal_local"
-                            android:layout_width="200dp"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/button_rounded"
-                            android:onClick="onClickLibrosLocal"
-                            android:text="Libros"
-                            android:textColor="@color/cardview_light_background" />
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/id_libros_principal_local"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/button_rounded"
+                                android:onClick="onClickLibrosLocal"
+                                android:text="Libros"
+                                android:textColor="@color/cardview_light_background"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </android.support.constraint.ConstraintLayout>
+
                     </TableRow>
 
                     <TableRow
@@ -124,14 +158,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <Button
-                            android:id="@+id/id_juegos_local"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/button_rounded"
-                            android:onClick="onClickJuegosLocal"
-                            android:text="Juegos"
-                            android:textColor="@color/cardview_light_background" />
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/id_juegos_local"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/button_rounded"
+                                android:onClick="onClickJuegosLocal"
+                                android:text="Juegos"
+                                android:textColor="@color/cardview_light_background"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </android.support.constraint.ConstraintLayout>
+
                     </TableRow>
 
                     <TableRow
@@ -140,92 +188,99 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <Button
-                            android:id="@+id/id_fotos_local"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/button_rounded"
-                            android:onClick="onClickFotosLocal"
-                            android:text="Fotos"
-                            android:textColor="@color/cardview_light_background" />
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/id_fotos_local"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/button_rounded"
+                                android:onClick="onClickFotosLocal"
+                                android:text="Fotos"
+                                android:textColor="@color/cardview_light_background"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </android.support.constraint.ConstraintLayout>
+
                     </TableRow>
 
                 </TableLayout>
 
-                <com.github.clans.fab.FloatingActionMenu
-                    android:id="@+id/floatingMenu"
-                    android:layout_width="match_parent"
-                    android:layout_height="376dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:padding="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="1.0"
-                    app:menu_backgroundColor="@android:color/transparent"
-                    fab:menu_animationDelayPerItem="0"
-                    fab:menu_colorNormal="#00C29F"
-                    fab:menu_colorPressed="#00C29F"
-                    fab:menu_colorRipple="#00C29F"
-                    fab:menu_fab_label="Cancel"
-                    fab:menu_labels_ellipsize="end"
-                    fab:menu_labels_singleLine="true">
-
-                    <com.github.clans.fab.FloatingActionButton
-                        android:id="@+id/fabChat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onChat"
-                        android:src="@drawable/fab_add"
-                        fab:fab_label="Chat"
-                        fab:fab_size="mini" />
-
-                    <com.github.clans.fab.FloatingActionButton
-                        android:id="@+id/fabFoto"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onInicio"
-                        android:src="@drawable/fab_add"
-                        fab:fab_label="@string/menuFotos"
-                        fab:fab_size="mini" />
-
-                    <com.github.clans.fab.FloatingActionButton
-                        android:id="@+id/fabPerfil"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onPerfillocal"
-                        android:src="@drawable/fab_add"
-                        fab:fab_label="Perfil"
-                        fab:fab_size="mini" />
-
-                    <com.github.clans.fab.FloatingActionButton
-                        android:id="@+id/fabConfig"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onConfiguracion"
-                        android:src="@drawable/fab_add"
-                        fab:fab_label="Config"
-                        fab:fab_size="mini" />
-
-                    <com.github.clans.fab.FloatingActionButton
-                        android:id="@+id/fabSalir"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="onSalir"
-                        android:src="@drawable/fab_add"
-                        fab:fab_label="Salir"
-                        fab:fab_size="mini" />
-
-                </com.github.clans.fab.FloatingActionMenu>
             </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/floatingMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            fab:layout_constraintBottom_toBottomOf="parent"
+            fab:layout_constraintEnd_toEndOf="parent"
+            fab:layout_constraintStart_toStartOf="parent"
+            fab:layout_constraintTop_toTopOf="parent"
+            fab:layout_constraintVertical_bias="1.0"
+            fab:menu_animationDelayPerItem="0"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_colorNormal="#00C29F"
+            fab:menu_colorPressed="#00C29F"
+            fab:menu_colorRipple="#00C29F"
+            fab:menu_fab_label="Cancel"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_singleLine="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onChat"
+                android:src="@drawable/fab_add"
+                fab:fab_label="Chat"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onPerfillocal"
+                android:src="@drawable/fab_add"
+                fab:fab_label="Perfil"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onConfiguracion"
+                android:src="@drawable/fab_add"
+                fab:fab_label="Config"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSalir"
+                android:src="@drawable/fab_add"
+                fab:fab_label="Salir"
+                fab:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
     </android.support.constraint.ConstraintLayout>
 
 </RelativeLayout>

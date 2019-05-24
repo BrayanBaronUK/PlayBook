@@ -16,9 +16,11 @@
         <LinearLayout
             android:id="@+id/linearLayout26"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout27"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +29,7 @@
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#EEF9ED">
 
                 <LinearLayout
@@ -49,7 +51,7 @@
 
                         <EditText
                             android:id="@+id/editText21"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
@@ -69,7 +71,7 @@
 
                         <EditText
                             android:id="@+id/editText22"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
@@ -89,7 +91,7 @@
 
                         <EditText
                             android:id="@+id/editText25"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
@@ -109,12 +111,12 @@
 
                         <EditText
                             android:id="@+id/editText23"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="7dp"
+                            android:layout_marginBottom="8dp"
                             android:backgroundTint="@color/colorPrimary"
                             android:ems="10"
                             android:hint="celular"
@@ -129,12 +131,12 @@
 
                         <EditText
                             android:id="@+id/editText26"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="3dp"
+                            android:layout_marginBottom="8dp"
                             android:backgroundTint="@color/colorPrimary"
                             android:ems="10"
                             android:hint="descripción"
@@ -149,7 +151,7 @@
 
                         <EditText
                             android:id="@+id/editText24"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
@@ -188,33 +190,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <android.support.v7.widget.CardView
+            <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:background="#EEF9ED">
 
-                <android.support.constraint.ConstraintLayout
+                <TextView
+                    android:id="@+id/textView18"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#EEF9ED">
-
-                    <TextView
-                        android:id="@+id/textView18"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="Registrar información"
-                        android:textColor="@color/cardview_dark_background"
-                        android:textSize="30sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </android.support.constraint.ConstraintLayout>
-
-            </android.support.v7.widget.CardView>
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Registrar información"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>
 
@@ -238,9 +234,9 @@
 
                 <Button
                     android:id="@+id/button6"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"

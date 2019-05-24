@@ -12,19 +12,6 @@
         android:background="#EEF9ED"
         tools:context=".buscar_evento">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/id_recicler_personas"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
-
         <LinearLayout
             android:id="@+id/linearLayout12"
             android:layout_width="match_parent"
@@ -34,7 +21,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/id_recicler_personas"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout29"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -47,9 +34,10 @@
                     android:id="@+id/editText3"
                     android:layout_width="208dp"
                     android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/colorPrimary"
                     android:ems="10"
                     android:hint="Buscar"
@@ -66,7 +54,6 @@
                     android:id="@+id/imageView15"
                     android:layout_width="51dp"
                     android:layout_height="48dp"
-                    android:layout_marginStart="80dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/button13"
@@ -77,10 +64,35 @@
             </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout29"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_recicler_personas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
         <com.github.clans.fab.FloatingActionMenu
             android:id="@+id/floatingMenu"
-            android:layout_width="139dp"
-            android:layout_height="211dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="8dp"
@@ -88,14 +100,13 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:padding="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.968"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:menu_backgroundColor="@android:color/transparent"
+            fab:layout_constraintBottom_toBottomOf="parent"
+            fab:layout_constraintEnd_toEndOf="parent"
+            fab:layout_constraintHorizontal_bias="0.968"
+            fab:layout_constraintStart_toStartOf="parent"
+            fab:layout_constraintTop_toBottomOf="@id/linearLayout10"
             fab:menu_animationDelayPerItem="0"
+            fab:menu_backgroundColor="@android:color/transparent"
             fab:menu_colorNormal="#00C29F"
             fab:menu_colorPressed="#00C29F"
             fab:menu_colorRipple="#00C29F"
@@ -109,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="onChat"
                 android:src="@drawable/fab_add"
-                fab:fab_label="Chat"
+                fab:fab_label="@string/menuChat"
                 fab:fab_size="mini" />
 
             <com.github.clans.fab.FloatingActionButton
@@ -121,13 +132,14 @@
                 fab:fab_label="@string/menuFotos"
                 fab:fab_size="mini" />
 
+
             <com.github.clans.fab.FloatingActionButton
                 android:id="@+id/fabPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onPerfillocal"
                 android:src="@drawable/fab_add"
-                fab:fab_label="Perfil"
+                fab:fab_label="@string/menuPerfil"
                 fab:fab_size="mini" />
 
             <com.github.clans.fab.FloatingActionButton
@@ -136,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="onConfiguracion"
                 android:src="@drawable/fab_add"
-                fab:fab_label="Config"
+                fab:fab_label="@string/menuConfig"
                 fab:fab_size="mini" />
 
             <com.github.clans.fab.FloatingActionButton
@@ -145,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="onSalir"
                 android:src="@drawable/fab_add"
-                fab:fab_label="Salir"
+                fab:fab_label="@string/menuSalir"
                 fab:fab_size="mini" />
 
         </com.github.clans.fab.FloatingActionMenu>

@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -23,91 +23,92 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="#EEF9ED">
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="164dp"
-                android:layout_height="35dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="PEPITODARCK"
-                android:textColor="@color/colorAccent"
-                android:textSize="24sp"
-                app:layout_constraintBottom_toTopOf="@+id/button24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/button25"
-                android:layout_width="158dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="32dp"
-                android:background="@drawable/button_rounded"
-                android:onClick="onClicksal3"
-                android:text="volver"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="18sp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+                app:layout_constraintTop_toTopOf="parent">
 
-            <Button
-                android:id="@+id/button22"
-                android:layout_width="218dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/button_rounded"
-                android:onClick="onClickinf"
-                android:text="editar informacion"
-                android:textColor="@color/cardview_light_background"
-                app:layout_constraintBottom_toTopOf="@+id/button25"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView19"
-                app:layout_constraintTop_toBottomOf="@+id/button24" />
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/button24"
-                android:layout_width="218dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/button_rounded"
-                android:onClick="onClickcon"
-                android:text="cambiar contraseña"
-                android:textColor="@color/cardview_light_background"
-                app:layout_constraintBottom_toTopOf="@+id/button22"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView19"
-                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                    <Button
+                        android:id="@+id/button25"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/button_rounded"
+                        android:onClick="onClicksal3"
+                        android:text="volver"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button22" />
 
-            <ImageView
-                android:id="@+id/imageView19"
-                android:layout_width="140dp"
-                android:layout_height="155dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button22"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3"
-                app:srcCompat="@drawable/perfil" />
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="164dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="PEPITODARCK"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toTopOf="@+id/button24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/button22"
+                        android:layout_width="218dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/button_rounded"
+                        android:onClick="onClickinf"
+                        android:text="editar informacion"
+                        android:textColor="@color/cardview_light_background"
+                        app:layout_constraintBottom_toTopOf="@+id/button25"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button24" />
+
+                    <Button
+                        android:id="@+id/button24"
+                        android:layout_width="218dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/button_rounded"
+                        android:onClick="onClickcon"
+                        android:text="cambiar contraseña"
+                        android:textColor="@color/cardview_light_background"
+                        app:layout_constraintBottom_toTopOf="@+id/button22"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                </android.support.constraint.ConstraintLayout>
+            </LinearLayout>
+
         </android.support.constraint.ConstraintLayout>
 
     </LinearLayout>

@@ -11,18 +11,29 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/id_galeria_fotos_principal_recycler"
-            android:layout_width="411dp"
-            android:layout_height="496dp"
+        <LinearLayout
+            android:id="@+id/linearLayout35"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout22" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout22">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_galeria_fotos_principal_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout22"
@@ -33,7 +44,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@id/id_galeria_fotos_principal_recycler"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout35"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">

@@ -11,12 +11,14 @@
 
         <LinearLayout
             android:id="@+id/linearLayout20"
-            android:layout_width="392dp"
-            android:layout_height="137dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout21">
@@ -30,9 +32,9 @@
                     android:id="@+id/id_principal_titulo_libros"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="150dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="150dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
                     android:text="TextView"
@@ -45,9 +47,9 @@
                     android:id="@+id/id_principal_text_libros"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="150dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="150dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
                     android:text="TextView"
@@ -75,8 +77,8 @@
 
             <ImageView
                 android:id="@+id/id_principal_img_libros"
-                android:layout_width="314dp"
-                android:layout_height="257dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/brothers" />
         </LinearLayout>

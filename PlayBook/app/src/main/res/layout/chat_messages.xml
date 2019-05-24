@@ -14,8 +14,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout8"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -33,8 +33,8 @@
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="315dp"
-                    android:layout_height="320dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
@@ -53,8 +53,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="370dp"
-            android:layout_height="153dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -75,7 +75,6 @@
                     android:layout_height="50dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/editText12"
@@ -87,7 +86,6 @@
                     android:id="@+id/imageView43"
                     android:layout_width="47dp"
                     android:layout_height="41dp"
-                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
@@ -100,13 +98,12 @@
 
                 <EditText
                     android:id="@+id/editText12"
-                    android:layout_width="238dp"
-                    android:layout_height="51dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/colorPrimary"
-                    android:ems="10"
+                    android:ems="8"
                     android:hint="chatea"
                     android:inputType="textPersonName"
                     android:textColor="@color/common_google_signin_btn_text_dark_focused"
